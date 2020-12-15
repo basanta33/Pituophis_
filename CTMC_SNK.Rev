@@ -1,0 +1,63 @@
+setwd("C:\\Users\\basan\\Documents\\LAB\\projects\\snakes\\123")
+
+data <- readDiscreteCharacterData("data")
+
+num_taxa <- data.ntaxa()
+num_branches <- 2 * num_taxa -3
+taxa <- data.taxa()
+moves = VectorMoves()
+monitors = VectorMonitors()
+
+for (i in 1:num_branches) {
+bl[i] ~ dnExponential(10.0)
+}
+
+topology ~ dnUniformTopology(taxa)
+
+er_prior <- v(1,1,1,1,1,1)
+er ~ dnDirichlet(er_prior)
+moves.append( mvBetaSimplex(er, weight=3) )
+moves.append( mvDirichletSimplex(er, weight=1) )
+
+pi_prior <- v(1,1,1,1)
+pi ~ dnDirichlet(pi_prior)
+moves.append( mvBetaSimplex(pi, weight=2) )
+moves.append( mvDirichletSimplex(pi, weight=1) )
+
+Q := fnGTR(er,pi)
+
+alpha ~ dnUniform( 0.0, 10 )
+sr := fnDiscretizeGamma( alpha, alpha, 4 )
+moves.append( mvScale(alpha, weight=2.0) )
+
+for (i in 1:num_branches) {
+br_lens[i] ~ dnExponential(10.0)
+moves.append( mvScale(br_lens[i]) )
+}
+
+
+TL := sum(br_lens)
+psi := treeAssembly(topology, br_lens)
+
+moves.append( mvNNI(topology, weight=num_taxa) )
+moves.append( mvSPR(topology, weight=num_taxa/10.0) )
+
+seq ~ dnPhyloCTMC(tree=psi, Q=Q,siteRates=sr, type="DNA")
+seq.clamp(data)
+
+mymodel = model(Q)
+
+
+monitors.append( mnModel(filename="data.log", printgen=10) )
+monitors.append( mnFile(filename="data.trees", printgen=10, psi) )
+monitors.append( mnScreen(printgen=100, TL) )
+monitors.append( mnStochasticVariable(filename="mcmc-stoch.log", printgen=10))
+
+mymcmc = mcmc(mymodel, monitors, moves)
+
+#trace = readStochasticVariableTrace(file="mcmc-stoch.log")
+#mymcmc.initializeFromTrace(trace)
+
+mymcmc.run(generations=50000)
+
+quit()
