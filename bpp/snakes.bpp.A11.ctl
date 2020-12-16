@@ -1,6 +1,6 @@
           seed =  -1
 
-       seqfile = data
+       seqfile = data.phylip
       Imapfile = snakes.Imap.txt
        outfile = data_out.txt
       mcmcfile = data_mcmc.txt
@@ -12,9 +12,9 @@
 
 *speciesmodelprior = 1         * 0: uniform labeled histories; 1:uniform rooted trees
 
-  species&tree = 4  NCA SCA NBC CBC SBC
-                     18  44  20  34  20
-                    (((NCA,(SCA,NBC)),CBC),SBC);
+  species&tree = 4  FE ME TN OG
+                    19 19 2 5
+                     ((FE,(ME,TN)),OG);
 *                ((NCA, ((SCA, NBC), CBC)), SBC);
 *                (((NCA, SCA), (NBC, CBC)), SBC);
 
@@ -33,4 +33,4 @@
         burnin = 8000
       sampfreq = 2
        nsample = 100000
-       threads = 2 1 1
+*       threads = 2 1 1
