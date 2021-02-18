@@ -2,8 +2,8 @@
 
        seqfile = data.phylip
       Imapfile = snakes.Imap.txt
-       outfile = data_out.txt
-      mcmcfile = data_mcmc.txt
+       outfile = data_combined.txt
+      mcmcfile = r1.mcmc.txt
 
 * speciesdelimitation = 0 * fixed species tree
 * speciesdelimitation = 1 0 2 * speciesdelimitation algorithm1 finetune (a m)
@@ -13,8 +13,8 @@
 *speciesmodelprior = 1         * 0: uniform labeled histories; 1:uniform rooted trees
 
   species&tree = 4  FE ME TN OG
-                    19 19 2 5
-                     ((FE,(ME,TN)),OG);
+                    19 19 2  5
+                     (((ME, FE), TN), OG);
 *                ((NCA, ((SCA, NBC), CBC)), SBC);
 *                (((NCA, SCA), (NBC, CBC)), SBC);
 
@@ -29,7 +29,7 @@
 
       finetune = 1: .01 .0001 .005 .0005 .2 .01 .01 .01  # auto (0 or 1): finetune for GBtj, GBspr, theta, tau, mix, locusrate, seqerr
 
-         print = 1 0 0 0   * MCMC samples, locusrate, heredityscalars Genetrees
+         print = -1  * MCMC samples, locusrate, heredityscalars Genetrees
         burnin = 8000
       sampfreq = 2
        nsample = 100000
