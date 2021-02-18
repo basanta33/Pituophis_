@@ -1,0 +1,121 @@
+Analysis started at: Thu Feb 11 08:46:07 2021
+Using BPP version: 4.3.8
+Command: /home/antlabadmin/mybpp/bpp --cfile snakes.bpp.A11.ctl 
+
+COMPRESSED ALIGNMENTS
+
+10 12 P
+^Pantherophis_obsoletusJeffersonLA     CTGCATATAA GG
+^Pml_JacksonMS1                        CTGCATGCTG XX
+^Pmmel_AutaugaAL                       CTXXXXGCTX XX
+^Pmmel_BakerGA                         CTGCAXGCCG XX
+^Pmmel_MarionGA1                       CTGCATGCCG GX
+^Pmmg_AlachuaFL                        CTGCATGCTG GX
+^Pmmg_HamiltonFL                       CTGCATGCTG GX
+^Pmmg_LafayetteFL                      CTGCATGCCG GX
+^Pmmg_OkeechobeeFL1                    CXGXXXGXTX XX
+^Pmmg_OkeechobeeFL2                    CTGCXTGCTG GX
+277 77 6 367 6 1 1 1 1 3 1 12
+
+
+Per-locus sequences in data and 'species&tree' tag:
+C.File | Data |                Status                | Population
+-------+------+--------------------------------------+-----------
+    19 |    5 | [OK]                                 | FE        
+    19 |    4 | [OK]                                 | ME        
+     2 |    0 | [WARNING] Parameter not identifiable | TN        
+     5 |    1 | [WARNING] Parameter not identifiable | OG        
+
+[Warning] Some parameters are not identifiable because there are 0 or 1 sequences from some species, but the control file lists different numbers.
+Those entries are indicated in the table above. Posterior for theta parameters for those species will be given by the prior.
+
+
+Initial MSC density and log-likelihood of observing data:
+log-PG0 = 54.102250   log-L0 = -1120.544542
+
+0:00 taken to read and process data..
+Restarting timer...
+
+
+-*- Terms index -*-
+
+  Prgs: progress of MCMC run (negative progress means burnin)
+  Gage: gene-tree age proposal
+  Gspr: gene-tree SPR proposal
+  thet: species tree theta proposal
+   tau: species tree tau proposal
+   mix: mixing proposal
+  stree proposal:  0.2000 for Ssnl, 0.8000 for Sspr
+    sp: number of delimited specices
+    np: number of parameters
+  mldp: most likelely delimitation and probability
+mthet1: root node mean theta
+ mtau1: root node mean tau
+log-PG: log-probability of gene trees (MSC)
+ log-L: mean log-L of observing data
+
+     |            Acceptance proportions             |
+Prgs | Gage Gspr thet  tau  mix   Sspr   Ssnl     rj | sp np        mldp mthet1   mtau1     log-PG        log-L
+--------------------------------------------------------------------------------------------------------------
+
+0:00 spent in MCMC
+
+
+(A) List of best models (count postP #species SpeciesTree)
+49344 0.493445 0.493445 2  (FEMETN OG)  (FEMETN, OG);
+12351 0.123511 0.616956 2  (FEME OGTN)  (FEME, OGTN);
+11786 0.117861 0.734817 3  (FEME OG TN)  (FEME, (OG, TN));
+11452 0.114521 0.849338 3  (FEME OG TN)  ((FEME, TN), OG);
+ 5289 0.052891 0.902229 3  (FEME OG TN)  ((FEME, OG), TN);
+ 1808 0.018080 0.920309 1  (FEMEOGTN)  FEMEOGTN;
+ 1565 0.015650 0.935959 4  (FE ME OG TN)  (((FE, ME), TN), OG);
+ 1310 0.013100 0.949059 2  (FEMEOG TN)  (FEMEOG, TN);
+ 1279 0.012790 0.961850 3  (FE METN OG)  ((FE, METN), OG);
+  973 0.009730 0.971580 3  (FETN ME OG)  ((FETN, ME), OG);
+  869 0.008690 0.980270 3  (FE ME OGTN)  ((FE, ME), OGTN);
+  800 0.008000 0.988270 4  (FE ME OG TN)  ((FE, ME), (OG, TN));
+  693 0.006930 0.995200 4  (FE ME OG TN)  (((FE, ME), OG), TN);
+  192 0.001920 0.997120 4  (FE ME OG TN)  (((FE, TN), ME), OG);
+  173 0.001730 0.998850 4  (FE ME OG TN)  ((FE, (ME, TN)), OG);
+   88 0.000880 0.999730 3  (FEOG ME TN)  ((FEOG, ME), TN);
+   12 0.000120 0.999850 2  (FE MEOGTN)  (FE, MEOGTN);
+    6 0.000060 0.999910 4  (FE ME OG TN)  (((FE, OG), ME), TN);
+    4 0.000040 0.999950 4  (FE ME OG TN)  ((FE, (ME, OG)), TN);
+    2 0.000020 0.999970 3  (FE METN OG)  (FE, (METN, OG));
+    1 0.000010 0.999980 3  (FE METN OG)  ((FE, OG), METN);
+    1 0.000010 0.999990 3  (FE ME OGTN)  (FE, (ME, OGTN));
+    1 0.000010 1.000000 4  (FE ME OG TN)  (FE, ((ME, TN), OG));
+
+(B) 11 species delimitations & their posterior probabilities
+49344 0.493445   2 (FEMETN OG)
+28527 0.285273   3 (FEME OG TN)
+12351 0.123511   2 (FEME OGTN)
+ 3434 0.034340   4 (FE ME OG TN)
+ 1808 0.018080   1 (FEMEOGTN)
+ 1310 0.013100   2 (FEMEOG TN)
+ 1282 0.012820   3 (FE METN OG)
+  973 0.009730   3 (FETN ME OG)
+  870 0.008700   3 (FE ME OGTN)
+   88 0.000880   3 (FEOG ME TN)
+   12 0.000120   2 (FE MEOGTN)
+
+(C) 13 delimited species & their posterior probabilities
+83560 0.835608 OG
+49344 0.493445 FEMETN
+40878 0.408784 FEME
+33359 0.333593 TN
+13221 0.132211 OGTN
+ 5598 0.055981 FE
+ 5365 0.053651 ME
+ 1808 0.018080 FEMEOGTN
+ 1310 0.013100 FEMEOG
+ 1282 0.012820 METN
+  973 0.009730 FETN
+   88 0.000880 FEOG
+   12 0.000120 MEOGTN
+
+(D) Posterior probability for # of species
+P[1] = 0.018080  prior[1] = 0.238095
+P[2] = 0.630176  prior[2] = 0.238095
+P[3] = 0.317403  prior[3] = 0.285714
+P[4] = 0.034340  prior[4] = 0.238095

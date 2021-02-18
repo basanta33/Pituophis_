@@ -1,0 +1,168 @@
+Analysis started at: Thu Feb 11 08:13:15 2021
+Using BPP version: 4.3.8
+Command: /home/antlabadmin/software/bpp/src/bpp --cfile snakes.bpp.A11.ctl 
+
+COMPRESSED ALIGNMENTS
+
+39 31 P
+^Pantherophis_obsoletusJeffersonLA     TATATTAATT TTCAATTTAT TCTGGACATT C
+^Pcatenifer_SiouxNE                    TATATTAATT TTCAATTTAT TCTGGACATT T
+^Pml_JacksonMS1                        TATATTAATT TTCAATTTAT TCTGGACATT T
+^Pml_JacksonMS2                        TATATTAATT TTCAATTTAT TCTGGACATX T
+^Pml_MobileAL                          TATATTAATT TTCAATTTAT TCTGGACATT T
+^Pml_PerryMS1                          TATATTAATT TTCAATTTAT TCTGGACATT T
+^Pml_PerryMS2                          TATATTAATT TTCAATTTAT XXXXXXXXXT T
+^Pml_PerryMS3                          TATATTAATT TTCAATTTAC TCTGGACATT T
+^Pmmel_AutaugaAL                       TATATTAATT TTCAATTTXT TCTGGACAXX T
+^Pmmel_BakerGA                         TATATTAATT TTCAATTTAT TXXXXXXXXT T
+^Pmmel_BurlingtonNJ1                   TATATTAATT TTCAXXXXXT XXXXXXXXXX T
+^Pmmel_BurlingtonNJ2                   TATATTAATT TTCXAXXXXT TCXXXXXXXX T
+^Pmmel_CovingtonAL1                    TATATTAATT TTCAATTTAT TCTGGACATT T
+^Pmmel_HokeNC                          TATATTAATT TTCAATTTAT TCTGGACATT T
+^Pmmel_HumphreysTN                     TATATTAATT TTAAATTXXT TCTGGACATX T
+^Pmmel_HuntingdonTN                    TATATTAATT TXCXAXXXXT TCTGGACATX T
+^Pmmel_MarionGA1                       TATATTAATT TTCAATTTAT TCTGGACATT T
+^Pmmel_MarionGA2                       TATATTAATT TTCAATTTAT TCTGGACATT T
+^Pmmel_OceanNJ                         TATATTAATT TTCAATTTAT TCTXXXXXXT T
+^Pmmel_PierceGA                        TATATTAATT TTCAATTTAT TCTGGACATT T
+^Pmmel_RockinghamNC                    TATATXXXXX XXAXXXXXXT XXXXXXXXXX X
+^Pmmel_ScotlandNC                      TATATTAATT TTCAATTTAT TCTGGACATT T
+^Pmmel_WinstonAL                       TATXXTAAXX XXXXXXXXXT XXXXXXXXXX T
+^Pmmg_AlachuaFL                        TATATTAATT TTCAATTTAT TCTGGACATT T
+^Pmmg_BristolFL                        TATATTAATT TTCAATTTAT TCTGGACATT T
+^Pmmg_BrooksvilleFL                    TATATTAATT TTCAATTTAT TCTGGACATT T
+^Pmmg_CantonmentFL                     TATATTAATT TTCAATTTAT TCTGGACXXT T
+^Pmmg_HamiltonFL                       TATATTAATT TTCAATTTAT TCTGGACATT T
+^Pmmg_HernandoFL                       TATATTAATT XXCXAXXXXT TCTGGXXXXX T
+^Pmmg_LafayetteFL                      TATATTAATT TTCAATTTAT TCTGXXXXXT T
+^Pmmg_LibertyFL                        TXXATXXXTT XXCXAXXXXX TCTGGACATX X
+^Pmmg_MarionFL                         TATATTAATT TTCAATTTAT TCTGGAXXXT T
+^Pmmg_OkaloosaFL                       TAXATXXXTX XXCXXXXXXX XXXXXXXXXX X
+^Pmmg_OkeechobeeFL1                    TATAXTXXXX XXXXXXXXXT XXXXXXXXXX X
+^Pmmg_OkeechobeeFL2                    TATATTAATT TTCAATTTAT TCTGGACATT T
+^Pmmg_PDLeFL                           TATATTAATT TTCAATTTAT TCTGGACATT T
+^Pmmg_SanRosFL                         TATATTAATT TTCAATXXXC TCTGGACATX T
+^Pruthveni_BienvilleLA1                TATATTAXTT XXCXAXXXXT TCTGGACATX T
+^Pruthveni_BienvilleLA2                TATATTAATT TTCAATTTAT TCTGGACATT T
+84 80 53 87 143 1 133 17 5 7 3 12 1 19 4 6 5 8 6 1 48 4 2 17 4 3 4 7 2 19 1
+
+
+Per-locus sequences in data and 'species&tree' tag:
+C.File | Data |                Status                | Population
+-------+------+--------------------------------------+-----------
+    19 |   16 | [OK]                                 | FE        
+    19 |   17 | [OK]                                 | ME        
+     2 |    2 | [OK]                                 | TN        
+     5 |    4 | [OK]                                 | OG        
+
+
+Initial MSC density and log-likelihood of observing data:
+log-PG0 = 226.064425   log-L0 = -1147.124051
+
+0:00 taken to read and process data..
+Restarting timer...
+
+
+-*- Terms index -*-
+
+  Prgs: progress of MCMC run (negative progress means burnin)
+  Gage: gene-tree age proposal
+  Gspr: gene-tree SPR proposal
+  thet: species tree theta proposal
+   tau: species tree tau proposal
+   mix: mixing proposal
+  stree proposal:  0.2000 for Ssnl, 0.8000 for Sspr
+    sp: number of delimited specices
+    np: number of parameters
+  mldp: most likelely delimitation and probability
+mthet1: root node mean theta
+ mtau1: root node mean tau
+log-PG: log-probability of gene trees (MSC)
+ log-L: mean log-L of observing data
+
+     |            Acceptance proportions             |
+Prgs | Gage Gspr thet  tau  mix   Sspr   Ssnl     rj | sp np        mldp mthet1   mtau1      log-PG        log-L
+---------------------------------------------------------------------------------------------------------------
+
+0:00 spent in MCMC
+
+
+(A) List of best models (count postP #species SpeciesTree)
+105801 0.529008 0.529008 2  (FEMETN OG)  (FEMETN, OG);
+ 15547 0.077735 0.606743 3  (FETN ME OG)  ((FETN, ME), OG);
+ 12485 0.062425 0.669168 3  (FE METN OG)  ((FE, METN), OG);
+  8638 0.043190 0.712359 3  (FEME OG TN)  ((FEME, TN), OG);
+  5851 0.029255 0.741614 4  (FE ME OG TN)  (((FE, TN), ME), OG);
+  5170 0.025850 0.767464 4  (FE ME OG TN)  (((FE, ME), TN), OG);
+  4942 0.024710 0.792174 4  (FE ME OG TN)  ((FE, (ME, TN)), OG);
+  3425 0.017125 0.809299 2  (FEME OGTN)  (FEME, OGTN);
+  3290 0.016450 0.825749 2  (FEOGTN ME)  (FEOGTN, ME);
+  2976 0.014880 0.840629 3  (FETN ME OG)  ((FETN, OG), ME);
+  2583 0.012915 0.853544 2  (FE MEOGTN)  (FE, MEOGTN);
+  2410 0.012050 0.865594 3  (FETN ME OG)  (FETN, (ME, OG));
+  2292 0.011460 0.877054 3  (FEME OG TN)  (FEME, (OG, TN));
+  2157 0.010785 0.887839 3  (FE ME OGTN)  ((FE, ME), OGTN);
+  1953 0.009765 0.897604 3  (FE METN OG)  ((FE, OG), METN);
+  1826 0.009130 0.906735 3  (FEME OG TN)  ((FEME, OG), TN);
+  1824 0.009120 0.915855 3  (FE METN OG)  (FE, (METN, OG));
+  1640 0.008200 0.924055 4  (FE ME OG TN)  (((FE, ME), OG), TN);
+  1546 0.007730 0.931785 4  (FE ME OG TN)  (((FE, TN), OG), ME);
+  1480 0.007400 0.939185 4  (FE ME OG TN)  ((FE, ME), (OG, TN));
+  1118 0.005590 0.944775 2  (FEMEOG TN)  (FEMEOG, TN);
+  1087 0.005435 0.950210 4  (FE ME OG TN)  (FE, ((ME, TN), OG));
+  1012 0.005060 0.955270 3  (FE ME OGTN)  (FE, (ME, OGTN));
+   978 0.004890 0.960160 4  (FE ME OG TN)  ((FE, TN), (ME, OG));
+   960 0.004800 0.964960 4  (FE ME OG TN)  ((FE, OG), (ME, TN));
+   922 0.004610 0.969570 3  (FE ME OGTN)  ((FE, OGTN), ME);
+   714 0.003570 0.973140 4  (FE ME OG TN)  ((FE, (OG, TN)), ME);
+   672 0.003360 0.976500 2  (FETN MEOG)  (FETN, MEOG);
+   651 0.003255 0.979755 4  (FE ME OG TN)  (FE, (ME, (OG, TN)));
+   596 0.002980 0.982735 4  (FE ME OG TN)  (((FE, OG), ME), TN);
+   505 0.002525 0.985260 4  (FE ME OG TN)  ((FE, (ME, OG)), TN);
+   503 0.002515 0.987775 4  (FE ME OG TN)  (((FE, OG), TN), ME);
+   384 0.001920 0.989695 2  (FEOG METN)  (FEOG, METN);
+   378 0.001890 0.991585 4  (FE ME OG TN)  (FE, ((ME, OG), TN));
+   345 0.001725 0.993310 3  (FE MEOG TN)  ((FE, TN), MEOG);
+   338 0.001690 0.995000 3  (FE MEOG TN)  ((FE, MEOG), TN);
+   309 0.001545 0.996545 3  (FEOG ME TN)  ((FEOG, ME), TN);
+   294 0.001470 0.998015 3  (FEOG ME TN)  ((FEOG, TN), ME);
+   204 0.001020 0.999035 3  (FE MEOG TN)  (FE, (MEOG, TN));
+   193 0.000965 1.000000 3  (FEOG ME TN)  (FEOG, (ME, TN));
+
+(B) 14 species delimitations & their posterior probabilities
+105801 0.529008   2 (FEMETN OG)
+ 27001 0.135006   4 (FE ME OG TN)
+ 20933 0.104666   3 (FETN ME OG)
+ 16262 0.081310   3 (FE METN OG)
+ 12756 0.063780   3 (FEME OG TN)
+  4091 0.020455   3 (FE ME OGTN)
+  3425 0.017125   2 (FEME OGTN)
+  3290 0.016450   2 (FEOGTN ME)
+  2583 0.012915   2 (FE MEOGTN)
+  1118 0.005590   2 (FEMEOG TN)
+   887 0.004435   3 (FE MEOG TN)
+   796 0.003980   3 (FEOG ME TN)
+   672 0.003360   2 (FETN MEOG)
+   384 0.001920   2 (FEOG METN)
+
+(C) 14 delimited species & their posterior probabilities
+182753 0.913770 OG
+105801 0.529008 FEMETN
+ 56111 0.280556 ME
+ 50824 0.254121 FE
+ 42558 0.212791 TN
+ 21605 0.108026 FETN
+ 16646 0.083230 METN
+ 16181 0.080905 FEME
+  7516 0.037580 OGTN
+  3290 0.016450 FEOGTN
+  2583 0.012915 MEOGTN
+  1559 0.007795 MEOG
+  1180 0.005900 FEOG
+  1118 0.005590 FEMEOG
+
+(D) Posterior probability for # of species
+P[1] = 0.000000  prior[1] = 0.238095
+P[2] = 0.586368  prior[2] = 0.238095
+P[3] = 0.278626  prior[3] = 0.285714
+P[4] = 0.135006  prior[4] = 0.238095

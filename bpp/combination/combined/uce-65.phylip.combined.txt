@@ -1,0 +1,176 @@
+Analysis started at: Thu Feb 11 08:33:33 2021
+Using BPP version: 4.3.8
+Command: /home/antlabadmin/mybpp/bpp --cfile snakes.bpp.A11.ctl 
+
+COMPRESSED ALIGNMENTS
+
+44 46 P
+^Pantherophis_obsoletusJeffersonLA     AATTGTCCTT CAAATATACT AAGAGCCCAA GTAATTAAXX XXXXXX
+^Pcatenifer_SiouxNE                    AATTGTCCTT CAAATACTXX XXXXXXXXXX XXXXXXXXTA TAACXX
+^Pcatenifer_WheelerTX                  AATTGTCCTT CAAATACTCT AAGAGXXXXX XXXXXXXXTX XXXXXX
+^Pml_JacksonMS1                        AATTGTCCTX XXXXXXCXCT AAGAGCCCAA GTAATTAXXX XXXXXX
+^Pml_JacksonMS2                        AATTGTCCTT CAAATXCTCT AAGAGCCCAA GTAATTAXXX XXXXXX
+^Pml_JacksonMS3                        AATTGTCCTT CAAATACTCT AAGAGCCCAA GTAATTAXTA TAACTA
+^Pml_MobileAL                          AATTGTCCTT CAAATACTCT AAGAGCCCAA GTAATTAXTA TAACTA
+^Pml_PerryMS1                          AATTGTCCTT CAAATACTCT AAGAGCCCAA GTAATTAXTA TAXXXX
+^Pml_PerryMS2                          AATTGTCCTT CAAAXXCTCT AAGAGCCCAA XXXXXXXXXX XXXXXX
+^Pml_PerryMS3                          AATTGTCCTT CAAATACTCT AAGAGCCCAA GTAATTAXTA TAACTA
+^Pmmel_AutaugaAL                       AATTGTCCTT CAAATACTCT AAGTCCCCAA GTAATTAXTA TAACTA
+^Pmmel_BakerGA                         AATTGTCCTT CAAATACTCT AATAGCCCAA GTAATTAXTA TAACTA
+^Pmmel_BurlingtonNJ1                   AATTGTCCTT CAAATACTCT AAGAGCCCAA GTAATTAXTA TAACTA
+^Pmmel_BurlingtonNJ2                   AATTGTCCTT CAAATACTCT AAGAGCCCAA GTAATTAXTA TAACTA
+^Pmmel_CovingtonAL1                    AATTGTCCTT CAAATACTCT AAGAGCCCAA GTAATTAXTA TAACTA
+^Pmmel_CovingtonAL2                    AATTGTCCTT CAAATACTCT AAGAGCCCAA GTAATTAXTA TXXXXX
+^Pmmel_HokeNC                          AATTGTCCTT CAAATACTCT AAGAGCCCAA GTAATTAXTA TAACTA
+^Pmmel_HumphreysTN                     AATTGTCCGT CAAATACTCT AAGAGCCCAA GTAATTAXTA TAACTA
+^Pmmel_HuntingdonTN                    AATTGTCCTT CAAATACTCT AAGAGCCCAA GTAATTAXTA TAACTA
+^Pmmel_MarionGA1                       AATTGTCCTT CAXXXXCTCT AAGAGCCCAA GTAATTAXXX XXXXXX
+^Pmmel_MarionGA2                       AATTGTCCTT CAAATACTCX XXXAXXXXXX XXXXXXXXTA TAAXXX
+^Pmmel_OceanNJ                         AATTGTCCTT CAAATACTCT AAGAGCCCAA GTAATTAXTA TAACTA
+^Pmmel_PierceGA                        AATTGTCTTT CAAATACTCT AAGAGCCCAA GTAATTAXTA TAACTA
+^Pmmel_RichmondNC                      AATTGTCCTT CAAATACTCT AAGAGCCCAA GTAATTAXTA TAACTA
+^Pmmel_RockinghamNC                    AATTGTCCTT CAAXXXCTCT AAGAGCCXXX XXXXXXXXXX XXXXXX
+^Pmmel_ScotlandNC                      AATTGTCCTT CAAATACTCT AAGAGCCCAA GTAATTAXTA TAACTA
+^Pmmel_TurnerGA                        AATTGTCCTT CAAATACTCT AAGAGCCCAA GTAATTAXTA TAACTX
+^Pmmel_WinstonAL                       AATTGTCCTT CAAATACTCT AAGAGCCCAA GTAATTAXTA TAACTA
+^Pmmg_AlachuaFL                        AATTGTCCTT CAAATACTCT AAGAGCCCAA GTAXXXXXTA TAACTA
+^Pmmg_BristolFL                        AATTGTACTT CAAATACTCT AAGAGCXXXX XXXXXXXXTA TAACTA
+^Pmmg_BrooksvilleFL                    AATTGTCCTT CAAATACTCT AAGAGCCCAA GTAATTAXTA TAACTA
+^Pmmg_CantonmentFL                     AAXXXXXXXT CAAATAXTXX XXXXXXXXXX XXXXXXXXTA XXXXXX
+^Pmmg_HamiltonFL                       AATTGTCCTT CAAATACTCT AAGAGCCCAA GTAATTAXTA TAACTA
+^Pmmg_HernandoFL                       AATTGXXCTT CAAATACTXX XXXXXXXXXX XXXXXXXXTA TAACTA
+^Pmmg_HighlandsFL                      AATTGTCCTT CAAATACTCT AAGAGCCCAA GTAATXXXTA TAACTA
+^Pmmg_LafayetteFL                      AATTGTCCTT CAAATACTCT AAGAGCCCAA GTXXXXXXTA TAACTA
+^Pmmg_LibertyFL                        AATTGTCCTT CAAATACTCT AAGAGCCCAA GTAATTAXTA TAACTA
+^Pmmg_MarionFL                         AATTGTCCTT CAAATACTCT AAGAGCCCAA GTAATTAXTA TAACTA
+^Pmmg_OkaloosaFL                       AATTGTCCTT CXXXXXCXCT AAGAGCCCAA GTAATTAXXX XXXXXX
+^Pmmg_OkeechobeeFL1                    ACTXXXXXXT XXXXXXXXXX XXXXXXXXXX XXXXXXXXXX XXXXXX
+^Pmmg_PDLeFL                           AATTGTCCTT CAAATACTCT AAGAGCCCAG GTAATTXXTA TAACTA
+^Pmmg_SanRosFL                         AATTGTCCTT CAAATACTCT ATGAGCCCGA GCAAXXXXTA TAACTA
+^Pruthveni_BienvilleLA1                AATTATCCTT CAAATACTCT XAXAXXXXXX XXXXXXXXTA TAACTA
+^Pruthveni_BienvilleLA2                AATTGTCCTT CAAATACTCT AAGAGCCCAA GTAATTAXTA TAACTA
+183 5 23 225 1 20 1 1 1 28 4 99 31 8 17 7 1 1 21 6 12 2 1 1 1 24 1 2 1 1 4 1 3 19 1 1 5 3 1 13 36 1 12 1 31 6
+
+
+Per-locus sequences in data and 'species&tree' tag:
+C.File | Data |                Status                | Population
+-------+------+--------------------------------------+-----------
+    19 |   18 | [OK]                                 | FE        
+    19 |   19 | [OK]                                 | ME        
+     2 |    2 | [OK]                                 | TN        
+     5 |    5 | [OK]                                 | OG        
+
+
+Initial MSC density and log-likelihood of observing data:
+log-PG0 = 259.120153   log-L0 = -1433.538833
+
+0:00 taken to read and process data..
+Restarting timer...
+
+
+-*- Terms index -*-
+
+  Prgs: progress of MCMC run (negative progress means burnin)
+  Gage: gene-tree age proposal
+  Gspr: gene-tree SPR proposal
+  thet: species tree theta proposal
+   tau: species tree tau proposal
+   mix: mixing proposal
+  stree proposal:  0.2000 for Ssnl, 0.8000 for Sspr
+    sp: number of delimited specices
+    np: number of parameters
+  mldp: most likelely delimitation and probability
+mthet1: root node mean theta
+ mtau1: root node mean tau
+log-PG: log-probability of gene trees (MSC)
+ log-L: mean log-L of observing data
+
+     |            Acceptance proportions             |
+Prgs | Gage Gspr thet  tau  mix   Sspr   Ssnl     rj | sp np        mldp mthet1   mtau1      log-PG        log-L
+---------------------------------------------------------------------------------------------------------------
+
+0:00 spent in MCMC
+
+
+(A) List of best models (count postP #species SpeciesTree)
+52574 0.262871 0.262871 1  (FEMEOGTN)  FEMEOGTN;
+ 6963 0.034815 0.297686 3  (FETN ME OG)  (FETN, (ME, OG));
+ 6906 0.034530 0.332217 3  (FETN ME OG)  ((FETN, OG), ME);
+ 6898 0.034490 0.366707 2  (FEOGTN ME)  (FEOGTN, ME);
+ 6861 0.034305 0.401012 3  (FETN ME OG)  ((FETN, ME), OG);
+ 5988 0.029940 0.430952 2  (FE MEOGTN)  (FE, MEOGTN);
+ 5949 0.029745 0.460697 4  (FE ME OG TN)  (((FE, TN), ME), OG);
+ 5570 0.027850 0.488547 4  (FE ME OG TN)  (((FE, TN), OG), ME);
+ 5435 0.027175 0.515723 4  (FE ME OG TN)  ((FE, (ME, TN)), OG);
+ 5329 0.026645 0.542368 4  (FE ME OG TN)  (FE, ((ME, TN), OG));
+ 5101 0.025505 0.567873 3  (FE METN OG)  ((FE, METN), OG);
+ 4928 0.024640 0.592513 3  (FE METN OG)  ((FE, OG), METN);
+ 4861 0.024305 0.616818 3  (FE METN OG)  (FE, (METN, OG));
+ 4648 0.023240 0.640058 4  (FE ME OG TN)  (FE, (ME, (OG, TN)));
+ 4570 0.022850 0.662908 4  (FE ME OG TN)  ((FE, TN), (ME, OG));
+ 4560 0.022800 0.685708 4  (FE ME OG TN)  ((FE, (OG, TN)), ME);
+ 4309 0.021545 0.707254 4  (FE ME OG TN)  ((FE, OG), (ME, TN));
+ 4234 0.021170 0.728424 2  (FEMETN OG)  (FEMETN, OG);
+ 4204 0.021020 0.749444 3  (FE ME OGTN)  ((FE, ME), OGTN);
+ 4078 0.020390 0.769834 4  (FE ME OG TN)  ((FE, ME), (OG, TN));
+ 3892 0.019460 0.789294 3  (FE ME OGTN)  ((FE, OGTN), ME);
+ 3883 0.019415 0.808709 3  (FE ME OGTN)  (FE, (ME, OGTN));
+ 3882 0.019410 0.828119 4  (FE ME OG TN)  (((FE, ME), TN), OG);
+ 3600 0.018000 0.846119 4  (FE ME OG TN)  (FE, ((ME, OG), TN));
+ 3411 0.017055 0.863174 4  (FE ME OG TN)  (((FE, OG), TN), ME);
+ 3329 0.016645 0.879819 4  (FE ME OG TN)  (((FE, ME), OG), TN);
+ 3163 0.015815 0.895634 4  (FE ME OG TN)  ((FE, (ME, OG)), TN);
+ 2917 0.014585 0.910220 4  (FE ME OG TN)  (((FE, OG), ME), TN);
+ 2758 0.013790 0.924010 2  (FETN MEOG)  (FETN, MEOG);
+ 2285 0.011425 0.935435 2  (FEOG METN)  (FEOG, METN);
+ 1933 0.009665 0.945100 3  (FE MEOG TN)  ((FE, TN), MEOG);
+ 1672 0.008360 0.953460 3  (FE MEOG TN)  (FE, (MEOG, TN));
+ 1413 0.007065 0.960525 3  (FEOG ME TN)  (FEOG, (ME, TN));
+ 1217 0.006085 0.966610 3  (FE MEOG TN)  ((FE, MEOG), TN);
+ 1197 0.005985 0.972595 3  (FEOG ME TN)  ((FEOG, TN), ME);
+ 1108 0.005540 0.978135 3  (FEME OG TN)  ((FEME, TN), OG);
+ 1074 0.005370 0.983505 2  (FEMEOG TN)  (FEMEOG, TN);
+  929 0.004645 0.988150 3  (FEME OG TN)  (FEME, (OG, TN));
+  853 0.004265 0.992415 3  (FEME OG TN)  ((FEME, OG), TN);
+  796 0.003980 0.996395 3  (FEOG ME TN)  ((FEOG, ME), TN);
+  721 0.003605 1.000000 2  (FEME OGTN)  (FEME, OGTN);
+
+(B) 15 species delimitations & their posterior probabilities
+64750 0.323752   4 (FE ME OG TN)
+52574 0.262871   1 (FEMEOGTN)
+20730 0.103651   3 (FETN ME OG)
+14890 0.074450   3 (FE METN OG)
+11979 0.059895   3 (FE ME OGTN)
+ 6898 0.034490   2 (FEOGTN ME)
+ 5988 0.029940   2 (FE MEOGTN)
+ 4822 0.024110   3 (FE MEOG TN)
+ 4234 0.021170   2 (FEMETN OG)
+ 3406 0.017030   3 (FEOG ME TN)
+ 2890 0.014450   3 (FEME OG TN)
+ 2758 0.013790   2 (FETN MEOG)
+ 2285 0.011425   2 (FEOG METN)
+ 1074 0.005370   2 (FEMEOG TN)
+  721 0.003605   2 (FEME OGTN)
+
+(C) 15 delimited species & their posterior probabilities
+107763 0.538818 ME
+107494 0.537473 OG
+102429 0.512148 FE
+ 76942 0.384712 TN
+ 52574 0.262871 FEMEOGTN
+ 23488 0.117441 FETN
+ 17175 0.085875 METN
+ 12700 0.063500 OGTN
+  7580 0.037900 MEOG
+  6898 0.034490 FEOGTN
+  5988 0.029940 MEOGTN
+  5691 0.028455 FEOG
+  4234 0.021170 FEMETN
+  3611 0.018055 FEME
+  1074 0.005370 FEMEOG
+
+(D) Posterior probability for # of species
+P[1] = 0.262871  prior[1] = 0.238095
+P[2] = 0.119791  prior[2] = 0.238095
+P[3] = 0.293586  prior[3] = 0.285714
+P[4] = 0.323752  prior[4] = 0.238095

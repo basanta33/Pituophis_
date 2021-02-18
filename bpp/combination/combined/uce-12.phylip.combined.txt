@@ -1,0 +1,112 @@
+Analysis started at: Wed Feb 10 13:34:33 2021
+Using BPP version: 4.3.8
+Command: /home/antlabadmin/mybpp/bpp --cfile snakes.bpp.A11.ctl 
+
+COMPRESSED ALIGNMENTS
+
+41 44 P
+^Pantherophis_obsoletusJeffersonLA     TAGCATCTGA GAAAAATCTC CGACCACAGT CCTGACGCGT CTGT
+^Pcatenifer_SiouxNE                    TAGCATCTGA GAAAAATCTA XXXXXXXXXX XXXXXXXXXX XXXX
+^Pcatenifer_WheelerTX                  TAGCATCTGA GAAAAATCTC CGACCACAGT CCTGACGCAC TAAA
+^Pml_JacksonMS1                        TAGCATCTGA GAAAAATCTC CGACCACAGT CCTGAAATAC TAAA
+^Pml_JacksonMS2                        TAGCATCTGA GAAAAATCTC CGACCACAGT CCTGAAATAC TAAA
+^Pml_JacksonMS3                        TAGCATCTGA GAAAAATCTC CGACCAXXXX XXXXXAAXXX XXXX
+^Pml_MobileAL                          TAGCATCTGA GAAAAATGXA CGACCACAGT CCTGACGCGT CAAA
+^Pml_PerryMS1                          TAGCATCTGA GAAAAATGXA CGACCACAGT CCTGACGCAC TAAA
+^Pml_PerryMS2                          TAGCATXXXX XXXXXXXXXX CGACCACAGT CCTGACGCGC TAAA
+^Pml_PerryMS3                          TAGCATCTGA GAAAXXXCTC CGACCACAGT CCTGACACGT CAAA
+^Pmmel_AutaugaAL                       TAGCATCTGA GXXXXXXXXC CGACCACAGT CCTGAAATAC TAAA
+^Pmmel_BakerGA                         TAGCATCTGA GAAAAATCTC CGACCACAGT CCTGAAATAC TAAA
+^Pmmel_BurlingtonNJ1                   TAGCATCTGA GAAAAATCTC CGACCXXXXX XXXXXAGXXX XXXX
+^Pmmel_CovingtonAL1                    TAGXXXXXXX XXXXXXXXXX CGAXXXXXXX XXXXXXAXXX XXXX
+^Pmmel_CovingtonAL2                    TAGCATCTGA GAAAAATCGC CGACCACAGT CCTGAAACGT CAAA
+^Pmmel_HokeNC                          TAACATCTGA GAAAAATCTC CGACXXCAGT CCTGXCGCAC TAAA
+^Pmmel_HuntingdonTN                    TAGCATCTGX XXXXXXXXXC CGACCACAGT CCXXAAATXC TAAX
+^Pmmel_MarionGA1                       TAGCATCTAA GAAAAATCTC CGACCACAGT CATGAAATAC TAAA
+^Pmmel_MarionGA2                       TAGCATCXXX XXXXXXXXXX CGACCACAGT CCTGACGCAC TAAA
+^Pmmel_OceanNJ                         TAGCATCTGA GAAAAATCTA CGXXXXXXXX XXXXXXGXXX XXXX
+^Pmmel_PierceGA                        TAGCATCTGA GAAAAATCTC CGACCACAGT CCTGAAATAC TAAA
+^Pmmel_RichmondNC                      TAGCATCTGA XXXXXXXXXC CGACCACAGX XCXXAAATXC XAXX
+^Pmmel_RockinghamNC                    TAGCATCTGA GAXXXXXXXC CGACCACAXX XCXXAAATXC XAXX
+^Pmmel_ScotlandNC                      TAACATCTGA GAAAAATCTC CGACXXCAGT CCTGXCGCAC TAAA
+^Pmmel_TurnerGA                        TAGCATCTGA GAAAAATCTC CGACCACAGT CCTGAAATAC TAAA
+^Pmmel_WinstonAL                       TAGCATCTGA GAAAAATCTC CGACCXXXXX XXXXXAAXXX XXXX
+^Pmmg_AlachuaFL                        TAGCAXXXXX XXXXXXXXXX XXXXXXXXXX XXXXXXXXXX XXXX
+^Pmmg_BristolFL                        TXGXXXXXXX XXXXXXXXXX CGAXXXXXXX XXXXXXAXXX XXXX
+^Pmmg_CantonmentFL                     TAACATCTGA GAAAXXXCTC CGACXXCAGT CCTGXCGCAC TAAA
+^Pmmg_HamiltonFL                       TAGCATCTAA GAAAAATGXC CGACCACAGT CCTGACGCAT CAAA
+^Pmmg_HernandoFL                       TAACATCTGA GAAAAATCTC CGACXXCAGT CCTGXCGCAC TAAA
+^Pmmg_HighlandsFL                      TAGCATCTGA GAACAATCTC CAACCACXGT CCTGXCGXAC TAAA
+^Pmmg_LafayetteFL                      TAGCATCTGA GAAAAATCTC CGACCACAGT CCTXAAATAC TAAX
+^Pmmg_LibertyFL                        TAGCATCTGA GAAAAATGXA XXXXXXXXXX XXXXXXXXXX XXXX
+^Pmmg_MarionFL                         TAGCATCTGA GAAAAATCTC CAACXXCAGT CCTGXCGCAC TAAA
+^Pmmg_OkaloosaFL                       TAGCXXXXXX XXXXXXXXXX CGACCACAGT CCTGACACAC TAAA
+^Pmmg_OkeechobeeFL2                    TAACATCTGA GAAAAAXCTC CGACXXCAGT CCTGXCGCAC TAAA
+^Pmmg_PDLeFL                           TAGCATCTGA GAAAAATCTC CGACCACAGT XCXXAAATXC TAAX
+^Pmmg_SanRosFL                         TAGCATCTGA GAAAAXXCTC CGACCACAGT CCTGAAATAC TAAA
+^Pruthveni_BienvilleLA1                TAGCATCTGA GAAAAATCTC CGACCACAGT CCTGAAATAC TAAA
+^Pruthveni_BienvilleLA2                TAGCATCTGA GAAAAATCTC CGACCACAGT CCTGAAATAC TAAA
+69 1 1 138 32 8 1 6 1 31 26 4 21 1 7 20 12 1 1 1 5 1 24 96 4 1 46 4 3 11 44 1 1 6 8 1 2 1 1 2 1 1 1 1
+
+
+Per-locus sequences in data and 'species&tree' tag:
+C.File | Data |                Status                | Population
+-------+------+--------------------------------------+-----------
+    19 |   16 | [OK]                                 | FE        
+    19 |   19 | [OK]                                 | ME        
+     2 |    1 | [WARNING] Parameter not identifiable | TN        
+     5 |    5 | [OK]                                 | OG        
+
+[Warning] Some parameters are not identifiable because there are 0 or 1 sequences from some species, but the control file lists different numbers.
+Those entries are indicated in the table above. Posterior for theta parameters for those species will be given by the prior.
+
+
+Initial MSC density and log-likelihood of observing data:
+log-PG0 = 244.169363   log-L0 = -1954.084912
+
+0:00 taken to read and process data..
+Restarting timer...
+
+
+-*- Terms index -*-
+
+  Prgs: progress of MCMC run (negative progress means burnin)
+  Gage: gene-tree age proposal
+  Gspr: gene-tree SPR proposal
+  thet: species tree theta proposal
+   tau: species tree tau proposal
+   mix: mixing proposal
+  stree proposal:  0.2000 for Ssnl, 0.8000 for Sspr
+    sp: number of delimited specices
+    np: number of parameters
+  mldp: most likelely delimitation and probability
+mthet1: root node mean theta
+ mtau1: root node mean tau
+log-PG: log-probability of gene trees (MSC)
+ log-L: mean log-L of observing data
+
+     |            Acceptance proportions             |
+Prgs | Gage Gspr thet  tau  mix   Sspr   Ssnl     rj | sp np        mldp mthet1   mtau1      log-PG        log-L
+---------------------------------------------------------------------------------------------------------------
+
+0:00 spent in MCMC
+
+
+(A) List of best models (count postP #species SpeciesTree)
+199997 0.999990 0.999990 1  (FEMEOGTN)  FEMEOGTN;
+     2 0.000010 1.000000 2  (FEMEOG TN)  (FEMEOG, TN);
+
+(B) 2 species delimitations & their posterior probabilities
+199997 0.999990   1 (FEMEOGTN)
+     2 0.000010   2 (FEMEOG TN)
+
+(C) 3 delimited species & their posterior probabilities
+199997 0.999990 FEMEOGTN
+     2 0.000010 FEMEOG
+     2 0.000010 TN
+
+(D) Posterior probability for # of species
+P[1] = 0.999990  prior[1] = 0.238095
+P[2] = 0.000010  prior[2] = 0.238095
+P[3] = 0.000000  prior[3] = 0.285714
+P[4] = 0.000000  prior[4] = 0.238095
