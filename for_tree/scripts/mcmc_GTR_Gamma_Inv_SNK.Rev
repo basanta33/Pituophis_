@@ -1,7 +1,7 @@
 ###Read sequence data
-Data <- readDiscreteCharacterData("P_mel_SNPs_phased_w_outgroup.min4.phy")
+data <- readDiscreteCharacterData("Data/P_mel_SNPs_phased_w_outgroup.min4.phy")
 
-###Get useful variables for the data 
+###Get useful variables for the data
 num_taxa <- data.ntaxa()
 num_branches <- 2 * num_taxa -3
 taxa <- data.taxa()
