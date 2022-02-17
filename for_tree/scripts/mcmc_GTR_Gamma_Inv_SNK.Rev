@@ -1,0 +1,103 @@
+###Read sequence data
+Data <- readDiscreteCharacterData("P_mel_SNPs_phased_w_outgroup.min4.phy")
+
+###Get useful variables for the data 
+num_taxa <- data.ntaxa()
+num_branches <- 2 * num_taxa -3
+taxa <- data.taxa()
+
+
+moves = VectorMoves()
+monitors = VectorMonitors()
+
+
+for (i in 1:num_branches) {
+bl[i] ~ dnExponential(10.0)
+}
+
+topology ~ dnUniformTopology(taxa)
+
+######################
+# Substitution Model #
+######################
+
+###exchangability rate parameters
+er_prior <- v(1,1,1,1,1,1)
+er ~ dnDirichlet(er_prior)
+moves.append( mvBetaSimplex(er, weight=3) )
+moves.append( mvDirichletSimplex(er, weight=1) )
+
+###stationary frequency parameters
+pi_prior <- v(1,1,1,1)
+pi ~ dnDirichlet(pi_prior)
+moves.append( mvBetaSimplex(pi, weight=2) )
+moves.append( mvDirichletSimplex(pi, weight=1) )
+
+###deterministic variable for the rate matrix, GTR
+Q := fnGTR(er,pi)
+
+
+#############################
+# Among Site Rate Variation #
+#############################
+
+### Among site rate variation
+alpha ~ dnUniform( 0.0, 10 )
+sr := fnDiscretizeGamma( alpha, alpha, 4 )
+moves.append( mvScale(alpha, weight=2.0) )
+
+
+#######################
+# Branch Length Prior #
+#######################
+
+for (i in 1:num_branches) {
+br_lens[i] ~ dnExponential(10.0)
+moves.append( mvScale(br_lens[i]) )
+}
+
+TL := sum(br_lens)
+
+psi := treeAssembly(topology, br_lens)
+
+moves.append( mvNNI(topology, weight=num_taxa) )
+moves.append( mvSPR(topology, weight=num_taxa/10.0) )
+
+###################
+# PhyloCTMC Model #
+###################
+
+#sequence evolution model
+seq ~ dnPhyloCTMC(tree=psi, Q=Q,siteRates=sr, type="DNA")
+
+#attach the data
+seq.clamp(data)
+
+
+############
+# Analysis #
+############
+
+mymodel = model(Q)
+
+#add monitors
+monitors.append( mnModel(filename="output/P_mel_SNPs_phased_w_outgroup.log", printgen=10) )
+monitors.append( mnFile(filename="output/P_mel_SNPs_phased_w_outgroup.trees", printgen=10, psi) )
+monitors.append( mnScreen(printgen=100, TL) )
+monitors.append( mnStochasticVariable(filename="output/mcmc-stoch.log", printgen=10))
+
+###run the analysis
+mymcmc = mcmc(mymodel, monitors, moves)
+#trace = readStochasticVariableTrace(file="mcmc-stoch.log")
+#mymcmc.initializeFromTrace(trace)
+mymcmc.run(generations=50000)
+
+###Summarize the output
+#trace = readTreeTrace("output/P_mel_SNPs_phased_w_outgroup.trees")
+###Get the maximum clade credibility tree
+#mccTree(trace, "P_mel_SNPs_phased_w_outgroup.mcc.tre")
+###Get the majority rule consensus tree
+#conTree(trace, "P_mel_SNPs_phased_w_outgroup.maj.tre")
+
+
+quit()
