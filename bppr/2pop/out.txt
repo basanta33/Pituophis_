@@ -1,4 +1,0 @@
-Analysis started at: Tue Feb 22 07:11:38 2022
-Using BPP version: 4.4.0
-Command: C:\Users\basan\softwares\bpp-4.4.0-win-x86_64\bpp-4.4.0-win-x86_64\bpp.exe -cfile snakes.bpp_2pop.ctl 
-
