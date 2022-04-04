@@ -1,5 +1,5 @@
 ###Read sequence data
-data <- readDiscreteCharacterData("Data/P_mel_SNPs_phased_w_outgroup.min4.phy")
+data <- readDiscreteCharacterData("Data/snk.nex")
 
 ###Get useful variables for the data
 num_taxa <- data.ntaxa()
@@ -15,7 +15,13 @@ for (i in 1:num_branches) {
 bl[i] ~ dnExponential(10.0)
 }
 
-topology ~ dnUniformTopology(taxa)
+outgroup = clade("Pantherophis_obsoletus_Jefferson_LA")
+outgroup2 = clade("P.catenifer_Sioux_NE", "P.catenifer_Wheeler_TX")
+outgroup3 = clade("P.ruthveni_Bienville_LA_1", "P.ruthveni_Bienville_LA_2")
+
+constraints = v(outgroup2, outgroup3)
+
+topology ~ dnUniformTopology(taxa, outgroup = outgroup )
 
 ######################
 # Substitution Model #
@@ -81,8 +87,8 @@ seq.clamp(data)
 mymodel = model(Q)
 
 #add monitors
-monitors.append( mnModel(filename="output/P_mel_SNPs_phased_w_outgroup.log", printgen=10) )
-monitors.append( mnFile(filename="output/P_mel_SNPs_phased_w_outgroup.trees", printgen=10, psi) )
+monitors.append( mnModel(filename="output/P_mel2.log", printgen=10) )
+monitors.append( mnFile(filename="output/P_mel2.trees", printgen=10, psi) )
 monitors.append( mnScreen(printgen=100, TL) )
 monitors.append( mnStochasticVariable(filename="output/mcmc-stoch.log", printgen=10))
 
@@ -90,7 +96,7 @@ monitors.append( mnStochasticVariable(filename="output/mcmc-stoch.log", printgen
 mymcmc = mcmc(mymodel, monitors, moves)
 #trace = readStochasticVariableTrace(file="mcmc-stoch.log")
 #mymcmc.initializeFromTrace(trace)
-mymcmc.run(generations=50000)
+mymcmc.run(generations=500000)
 
 ###Summarize the output
 #trace = readTreeTrace("output/P_mel_SNPs_phased_w_outgroup.trees")
