@@ -1,0 +1,54 @@
+#NEXUS
+
+	Begin taxa;
+	Dimensions ntax=43;
+	Taxlabels
+		P.catenifer_Sioux_NE
+		P.catenifer_Wheeler_TX
+		P.m.l._Jackson_MS_2
+		P.m.l._Jackson_MS_3
+		P.m.l._Mobile_AL
+		P.m.l._Perry_MS_1
+		P.m.l._Perry_MS_2
+		P.m.l._Perry_MS_3
+		P.m.mel._Autauga_AL
+		P.m.mel._Baker_GA
+		P.m.mel._Burlington_NJ_1
+		P.m.mel._Burlington_NJ_2
+		P.m.mel._Covington_AL_1
+		P.m.mel._Covington_AL_2
+		P.m.mel._Hoke_NC
+		P.m.mel._Humphreys_TN
+		P.m.mel._Huntingdon_TN
+		P.m.mel._Marion_GA_1
+		P.m.mel._Marion_GA_2
+		P.m.mel._Ocean_NJ
+		P.m.mel._Pierce_GA
+		P.m.mel._Richmond_NC
+		P.m.mel._Rockingham_NC
+		P.m.mel._Scotland_NC
+		P.m.mel._Turner_GA
+		P.m.mel._Winston_AL
+		P.m.mg._Alachua_FL
+		P.m.mg._Bristol_FL
+		P.m.mg._Cantonment_FL
+		P.m.mg._Hamilton_FL
+		P.m.mg._Highlands_FL
+		P.m.mg._Lafayette_FL
+		P.m.mg._Liberty_FL
+		P.m.mg._Marion_FL
+		P.m.mg._Okaloosa_FL
+		P.m.mg._Okeechobee_FL_1
+		P.m.mg._Okeechobee_FL_2
+		P.m.mg._PDLe_FL
+		P.m.mg._SanRos_FL
+		P.m.mg_Hernando_FL
+		P.ruthveni_Bienville_LA_1
+		P.ruthveni_Bienville_LA_2
+		Pantherophis_obsoletus_Jefferson_LA
+		;
+End;
+
+Begin trees;
+tree TREE1 = [&R](((((((((((P.m.mg._Okeechobee_FL_1[&index=32,age_95%_HPD={1.40165,1.61049}]:0.047110,P.m.mg._Okeechobee_FL_2[&index=34,age_95%_HPD={1.42067,1.63131}]:0.029309)[&index=44,posterior=1.000000,age_95%_HPD={1.45168,1.66225}]:0.013817,P.m.mg._Highlands_FL[&index=23,age_95%_HPD={1.42317,1.63246}]:0.043065)[&index=45,posterior=1.000000,age_95%_HPD={1.46514,1.67512}]:0.010020,(P.m.mg._Marion_FL[&index=21,age_95%_HPD={1.42463,1.63435}]:0.039718,P.m.mg_Hernando_FL[&index=35,age_95%_HPD={1.41992,1.62924}]:0.047810)[&index=46,posterior=1.000000,age_95%_HPD={1.4665,1.67587}]:0.008599)[&index=47,posterior=1.000000,age_95%_HPD={1.47579,1.6852}]:0.005882,(P.m.mg._Alachua_FL[&index=4,age_95%_HPD={1.42328,1.63261}]:0.049832,P.m.mg._Lafayette_FL[&index=26,age_95%_HPD={1.4245,1.63408}]:0.037588)[&index=48,posterior=1.000000,age_95%_HPD={1.47443,1.68416}]:0.007488)[&index=49,posterior=1.000000,age_95%_HPD={1.48056,1.69059}]:0.011413,((P.m.mel._Baker_GA[&index=3,age_95%_HPD={1.43453,1.64413}]:0.046032,P.m.mel._Turner_GA[&index=43,age_95%_HPD={1.43981,1.64927}]:0.040380)[&index=50,posterior=1.000000,age_95%_HPD={1.48077,1.69136}]:0.007289,P.m.mel._Pierce_GA[&index=10,age_95%_HPD={1.44659,1.65598}]:0.040613)[&index=51,posterior=0.995201,age_95%_HPD={1.4882,1.69802}]:0.004787)[&index=52,posterior=1.000000,age_95%_HPD={1.49254,1.70239}]:0.005764,((((P.m.mel._Burlington_NJ_1[&index=19,age_95%_HPD={1.41207,1.62171}]:0.032339,P.m.mel._Ocean_NJ[&index=2,age_95%_HPD={1.41028,1.61862}]:0.030735)[&index=53,posterior=0.999733,age_95%_HPD={1.44581,1.65515}]:0.009046,P.m.mel._Burlington_NJ_2[&index=30,age_95%_HPD={1.41173,1.62143}]:0.034873)[&index=54,posterior=1.000000,age_95%_HPD={1.45375,1.66354}]:0.023799,P.m.mel._Hoke_NC[&index=7,age_95%_HPD={1.43529,1.64424}]:0.043629)[&index=55,posterior=1.000000,age_95%_HPD={1.47575,1.68579}]:0.009521,((P.m.mel._Richmond_NC[&index=33,age_95%_HPD={1.42324,1.63299}]:0.033583,P.m.mel._Rockingham_NC[&index=8,age_95%_HPD={1.41775,1.62702}]:0.046357)[&index=56,posterior=1.000000,age_95%_HPD={1.45801,1.6687}]:0.009096,P.m.mel._Scotland_NC[&index=40,age_95%_HPD={1.41903,1.62889}]:0.046452)[&index=57,posterior=1.000000,age_95%_HPD={1.47584,1.68572}]:0.008918)[&index=58,posterior=1.000000,age_95%_HPD={1.48573,1.69509}]:0.012528)[&index=59,posterior=1.000000,age_95%_HPD={1.49828,1.70812}]:0.007187,(((((P.m.l._Jackson_MS_2[&index=39,age_95%_HPD={1.41918,1.62956}]:0.039772,P.m.l._Mobile_AL[&index=24,age_95%_HPD={1.41722,1.62785}]:0.031949)[&index=60,posterior=1.000000,age_95%_HPD={1.44858,1.65951}]:0.007804,P.m.l._Perry_MS_2[&index=29,age_95%_HPD={1.41923,1.62961}]:0.038847)[&index=61,posterior=1.000000,age_95%_HPD={1.46125,1.67267}]:0.007309,((P.m.l._Perry_MS_1[&index=27,age_95%_HPD={1.41661,1.62709}]:0.031651,P.m.l._Perry_MS_3[&index=20,age_95%_HPD={1.41101,1.62188}]:0.034703)[&index=62,posterior=1.000000,age_95%_HPD={1.44437,1.65561}]:0.012121,P.m.l._Jackson_MS_3[&index=42,age_95%_HPD={1.41841,1.6296}]:0.035783)[&index=63,posterior=1.000000,age_95%_HPD={1.45841,1.67012}]:0.008251)[&index=64,posterior=1.000000,age_95%_HPD={1.46726,1.67853}]:0.017675,(((P.m.mel._Covington_AL_1[&index=25,age_95%_HPD={1.41832,1.62748}]:0.044226,P.m.mg._Cantonment_FL[&index=41,age_95%_HPD={1.41007,1.62004}]:0.054643)[&index=65,posterior=1.000000,age_95%_HPD={1.46144,1.67234}]:0.007352,(P.m.mel._Covington_AL_2[&index=17,age_95%_HPD={1.43749,1.64794}]:0.031256,P.m.mg._SanRos_FL[&index=31,age_95%_HPD={1.4199,1.62896}]:0.042474)[&index=66,posterior=1.000000,age_95%_HPD={1.46083,1.6714}]:0.008321)[&index=67,posterior=1.000000,age_95%_HPD={1.46792,1.67848}]:0.007028,(P.m.mg._Okaloosa_FL[&index=13,age_95%_HPD={1.42573,1.63513}]:0.050925,P.m.mg._PDLe_FL[&index=15,age_95%_HPD={1.43194,1.64244}]:0.038665)[&index=68,posterior=1.000000,age_95%_HPD={1.46864,1.67959}]:0.009304)[&index=69,posterior=0.570248,age_95%_HPD={1.47537,1.68432}]:0.005989)[&index=70,posterior=1.000000,age_95%_HPD={1.49194,1.70261}]:0.007090,(((P.m.mg._Hamilton_FL[&index=16,age_95%_HPD={1.43955,1.64901}]:0.037405,P.m.mg._Liberty_FL[&index=11,age_95%_HPD={1.43395,1.64289}]:0.044242)[&index=71,posterior=1.000000,age_95%_HPD={1.47627,1.68649}]:0.007539,P.m.mg._Bristol_FL[&index=36,age_95%_HPD={1.44227,1.65224}]:0.042332)[&index=72,posterior=1.000000,age_95%_HPD={1.48438,1.69394}]:0.007995,(P.m.mel._Marion_GA_1[&index=6,age_95%_HPD={1.43062,1.64075}]:0.038644,P.m.mel._Marion_GA_2[&index=5,age_95%_HPD={1.43866,1.64951}]:0.042390)[&index=73,posterior=1.000000,age_95%_HPD={1.48212,1.69223}]:0.010082)[&index=74,posterior=1.000000,age_95%_HPD={1.49165,1.70175}]:0.006586)[&index=75,posterior=0.974140,age_95%_HPD={1.4887,1.69892}]:0.006012)[&index=76,posterior=1.000000,age_95%_HPD={1.50575,1.71619}]:0.009841,((P.m.mel._Autauga_AL[&index=38,age_95%_HPD={1.44512,1.65428}]:0.043958,P.m.mel._Winston_AL[&index=12,age_95%_HPD={1.46468,1.67352}]:0.035260)[&index=77,posterior=1.000000,age_95%_HPD={1.49819,1.70783}]:0.009842,(P.m.mel._Humphreys_TN[&index=14,age_95%_HPD={1.4258,1.63465}]:0.064585,P.m.mel._Huntingdon_TN[&index=22,age_95%_HPD={1.46009,1.66922}]:0.036142)[&index=78,posterior=1.000000,age_95%_HPD={1.49519,1.7045}]:0.012017)[&index=79,posterior=0.998400,age_95%_HPD={1.50853,1.71826}]:0.006810)[&index=80,posterior=1.000000,age_95%_HPD={1.51506,1.72514}]:0.035763,(P.ruthveni_Bienville_LA_1[&index=18,age_95%_HPD={1.49943,1.7097}]:0.007478,P.ruthveni_Bienville_LA_2[&index=37,age_95%_HPD={1.50132,1.71115}]:0.005082)[&index=81,posterior=1.000000,age_95%_HPD={1.5072,1.71734}]:0.041723)[&index=82,posterior=1.000000,age_95%_HPD={1.55014,1.76015}]:0.150221,Pantherophis_obsoletus_Jefferson_LA[&index=28]:1.799290)[&index=83,posterior=1.000000,age_95%_HPD={1.6919,1.90261}]:0.050486,P.catenifer_Sioux_NE[&index=1,age_95%_HPD={1.68202,1.89555}]:0.063381,P.catenifer_Wheeler_TX[&index=9,age_95%_HPD={1.69846,1.91183}]:0.045168)[&index=84,posterior=1.000000,age_95%_HPD={1.7424,1.95658}]:0.000000;
+End;
