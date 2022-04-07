@@ -2,3 +2,5 @@
 .Rhistory
 .RData
 .Ruserdata
+# ignore papers and figures
+./papers/
