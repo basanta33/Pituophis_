@@ -1,0 +1,374 @@
+/* Graphical model description in DOT language                                    */
+/*    To view graph:                                                              */
+/*       open this file in the program Graphviz: http://www.graphviz.org          */
+/*       or paste contents into an online viewer: http://stamm-wilbrandt.de/GraphvizFiddle */
+
+digraph REVDAG {
+   n_Q [shape=oval, style="dashed,filled", fillcolor=white, label="Q\n[ fnGTR(Simplex<any>) ]"]
+   n_pi [shape=oval, style=filled, fillcolor=white, label="pi"]
+   n_pi_prior [shape=record, style=filled, fillcolor=white, label="{pi_prior|[ 1.000, 1.000, 1.000, 1.000 ]}"]
+   n_er [shape=oval, style=filled, fillcolor=white, label="er"]
+   n_er_prior [shape=record, style=filled, fillcolor=white, label="{er_prior|[ 1.000, 1.000, 1.000, 1.000, 1.000, 1.000 ]}"]
+   n_seq [shape=oval, style=filled, fillcolor=gray, label="seq"]
+   n_psi [shape=oval, style="dashed,filled", fillcolor=white, label="psi\n[ fnTreeAssembly(Tree<any>) ]"]
+   n_topology [shape=oval, style=filled, fillcolor=white, label="topology"]
+   n_br_lens [shape=oval, style="dashed,filled", fillcolor=white, label="br_lens\n[ v(RealPos<any>) ]"]
+   n_br_lens_1 [shape=oval, style=filled, fillcolor=white, label="br_lens[1]"]
+   n_0x20aa860 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_2 [shape=oval, style=filled, fillcolor=white, label="br_lens[2]"]
+   n_0x20ac3e0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_3 [shape=oval, style=filled, fillcolor=white, label="br_lens[3]"]
+   n_0x20a97e0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_4 [shape=oval, style=filled, fillcolor=white, label="br_lens[4]"]
+   n_0x20ac280 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_5 [shape=oval, style=filled, fillcolor=white, label="br_lens[5]"]
+   n_0x20abba0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_6 [shape=oval, style=filled, fillcolor=white, label="br_lens[6]"]
+   n_0x20ab200 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_7 [shape=oval, style=filled, fillcolor=white, label="br_lens[7]"]
+   n_0x20a93c0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_8 [shape=oval, style=filled, fillcolor=white, label="br_lens[8]"]
+   n_0x20a9100 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_9 [shape=oval, style=filled, fillcolor=white, label="br_lens[9]"]
+   n_0x20ab780 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_10 [shape=oval, style=filled, fillcolor=white, label="br_lens[10]"]
+   n_0x20abd00 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_11 [shape=oval, style=filled, fillcolor=white, label="br_lens[11]"]
+   n_0x20a8e40 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_12 [shape=oval, style=filled, fillcolor=white, label="br_lens[12]"]
+   n_0x20aaf40 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_13 [shape=oval, style=filled, fillcolor=white, label="br_lens[13]"]
+   n_0x20ad720 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_14 [shape=oval, style=filled, fillcolor=white, label="br_lens[14]"]
+   n_0x20a9940 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_15 [shape=oval, style=filled, fillcolor=white, label="br_lens[15]"]
+   n_0x20aac80 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_16 [shape=oval, style=filled, fillcolor=white, label="br_lens[16]"]
+   n_0x20aa9c0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_17 [shape=oval, style=filled, fillcolor=white, label="br_lens[17]"]
+   n_0x20aa2e0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_18 [shape=oval, style=filled, fillcolor=white, label="br_lens[18]"]
+   n_0x20abe60 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_19 [shape=oval, style=filled, fillcolor=white, label="br_lens[19]"]
+   n_0x20ab360 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_20 [shape=oval, style=filled, fillcolor=white, label="br_lens[20]"]
+   n_0x20aa440 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_21 [shape=oval, style=filled, fillcolor=white, label="br_lens[21]"]
+   n_0x20aab20 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_22 [shape=oval, style=filled, fillcolor=white, label="br_lens[22]"]
+   n_0x20ab4c0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_23 [shape=oval, style=filled, fillcolor=white, label="br_lens[23]"]
+   n_0x20ad040 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_24 [shape=oval, style=filled, fillcolor=white, label="br_lens[24]"]
+   n_0x20ab620 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_25 [shape=oval, style=filled, fillcolor=white, label="br_lens[25]"]
+   n_0x20abfc0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_26 [shape=oval, style=filled, fillcolor=white, label="br_lens[26]"]
+   n_0x20ac540 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_27 [shape=oval, style=filled, fillcolor=white, label="br_lens[27]"]
+   n_0x20acee0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_28 [shape=oval, style=filled, fillcolor=white, label="br_lens[28]"]
+   n_0x20ad300 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_29 [shape=oval, style=filled, fillcolor=white, label="br_lens[29]"]
+   n_0x20a8080 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_30 [shape=oval, style=filled, fillcolor=white, label="br_lens[30]"]
+   n_0x20a81e0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_31 [shape=oval, style=filled, fillcolor=white, label="br_lens[31]"]
+   n_0x20a84a0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_32 [shape=oval, style=filled, fillcolor=white, label="br_lens[32]"]
+   n_0x20ade00 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_33 [shape=oval, style=filled, fillcolor=white, label="br_lens[33]"]
+   n_0x20adca0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_34 [shape=oval, style=filled, fillcolor=white, label="br_lens[34]"]
+   n_0x20ad9e0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_35 [shape=oval, style=filled, fillcolor=white, label="br_lens[35]"]
+   n_0x20ad880 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_36 [shape=oval, style=filled, fillcolor=white, label="br_lens[36]"]
+   n_0x20adb40 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_37 [shape=oval, style=filled, fillcolor=white, label="br_lens[37]"]
+   n_0x20a2040 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_38 [shape=oval, style=filled, fillcolor=white, label="br_lens[38]"]
+   n_0x20a2300 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_39 [shape=oval, style=filled, fillcolor=white, label="br_lens[39]"]
+   n_0x20a1540 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_40 [shape=oval, style=filled, fillcolor=white, label="br_lens[40]"]
+   n_0x209dfa0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_41 [shape=oval, style=filled, fillcolor=white, label="br_lens[41]"]
+   n_0x20a1d80 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_42 [shape=oval, style=filled, fillcolor=white, label="br_lens[42]"]
+   n_0x20a0a40 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_43 [shape=oval, style=filled, fillcolor=white, label="br_lens[43]"]
+   n_0x20a21a0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_44 [shape=oval, style=filled, fillcolor=white, label="br_lens[44]"]
+   n_0x209ec00 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_45 [shape=oval, style=filled, fillcolor=white, label="br_lens[45]"]
+   n_0x209dce0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_46 [shape=oval, style=filled, fillcolor=white, label="br_lens[46]"]
+   n_0x20a16a0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_47 [shape=oval, style=filled, fillcolor=white, label="br_lens[47]"]
+   n_0x209e7e0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_48 [shape=oval, style=filled, fillcolor=white, label="br_lens[48]"]
+   n_0x20a1120 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_49 [shape=oval, style=filled, fillcolor=white, label="br_lens[49]"]
+   n_0x209de40 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_50 [shape=oval, style=filled, fillcolor=white, label="br_lens[50]"]
+   n_0x209e520 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_51 [shape=oval, style=filled, fillcolor=white, label="br_lens[51]"]
+   n_0x20a2460 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_52 [shape=oval, style=filled, fillcolor=white, label="br_lens[52]"]
+   n_0x209ff40 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_53 [shape=oval, style=filled, fillcolor=white, label="br_lens[53]"]
+   n_0x20a0e60 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_54 [shape=oval, style=filled, fillcolor=white, label="br_lens[54]"]
+   n_0x209d760 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_55 [shape=oval, style=filled, fillcolor=white, label="br_lens[55]"]
+   n_0x20a25c0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_56 [shape=oval, style=filled, fillcolor=white, label="br_lens[56]"]
+   n_0x209e680 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_57 [shape=oval, style=filled, fillcolor=white, label="br_lens[57]"]
+   n_0x209f020 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_58 [shape=oval, style=filled, fillcolor=white, label="br_lens[58]"]
+   n_0x20a1c20 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_59 [shape=oval, style=filled, fillcolor=white, label="br_lens[59]"]
+   n_0x209d4a0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_60 [shape=oval, style=filled, fillcolor=white, label="br_lens[60]"]
+   n_0x20a1ee0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_61 [shape=oval, style=filled, fillcolor=white, label="br_lens[61]"]
+   n_0x209f180 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_62 [shape=oval, style=filled, fillcolor=white, label="br_lens[62]"]
+   n_0x209d340 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_63 [shape=oval, style=filled, fillcolor=white, label="br_lens[63]"]
+   n_0x20a2720 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_64 [shape=oval, style=filled, fillcolor=white, label="br_lens[64]"]
+   n_0x20a1280 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_65 [shape=oval, style=filled, fillcolor=white, label="br_lens[65]"]
+   n_0x209e940 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_66 [shape=oval, style=filled, fillcolor=white, label="br_lens[66]"]
+   n_0x209f2e0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_67 [shape=oval, style=filled, fillcolor=white, label="br_lens[67]"]
+   n_0x209d080 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_68 [shape=oval, style=filled, fillcolor=white, label="br_lens[68]"]
+   n_0x209f860 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_69 [shape=oval, style=filled, fillcolor=white, label="br_lens[69]"]
+   n_0x209db80 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_70 [shape=oval, style=filled, fillcolor=white, label="br_lens[70]"]
+   n_0x20a0ba0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_71 [shape=oval, style=filled, fillcolor=white, label="br_lens[71]"]
+   n_0x209f440 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_72 [shape=oval, style=filled, fillcolor=white, label="br_lens[72]"]
+   n_0x20a08e0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_73 [shape=oval, style=filled, fillcolor=white, label="br_lens[73]"]
+   n_0x20a00a0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_74 [shape=oval, style=filled, fillcolor=white, label="br_lens[74]"]
+   n_0x20a1800 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_75 [shape=oval, style=filled, fillcolor=white, label="br_lens[75]"]
+   n_0x20a0d00 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_76 [shape=oval, style=filled, fillcolor=white, label="br_lens[76]"]
+   n_0x209e100 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_77 [shape=oval, style=filled, fillcolor=white, label="br_lens[77]"]
+   n_0x209f9c0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_78 [shape=oval, style=filled, fillcolor=white, label="br_lens[78]"]
+   n_0x209d8c0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_79 [shape=oval, style=filled, fillcolor=white, label="br_lens[79]"]
+   n_0x20a0fc0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_80 [shape=oval, style=filled, fillcolor=white, label="br_lens[80]"]
+   n_0x20a13e0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_81 [shape=oval, style=filled, fillcolor=white, label="br_lens[81]"]
+   n_0x209d1e0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_82 [shape=oval, style=filled, fillcolor=white, label="br_lens[82]"]
+   n_0x209d600 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_br_lens_83 [shape=oval, style=filled, fillcolor=white, label="br_lens[83]"]
+   n_0x20a1960 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_TL [shape=oval, style="dashed,filled", fillcolor=white, label="TL\n[ sum(RealPos[]<any>) ]"]
+   n_seq_pInv [shape=record, style=filled, fillcolor=white, label="{seq.pInv|0}"]
+   n_seq_branchRates [shape=record, style=filled, fillcolor=white, label="{seq.branchRates|1}"]
+   n_sr [shape=oval, style="dashed,filled", fillcolor=white, label="sr\n[ fnDiscretizeGamma(RealPos<any>) ]"]
+   n_alpha [shape=oval, style=filled, fillcolor=white, label="alpha"]
+   n_0x209e260 [shape=box, style=filled, fillcolor=white, label="0"]
+   n_0x209e3c0 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_numCats [shape=record, style=filled, fillcolor=white, label="{numCats|4}"]
+   n_Q -> n_seq
+   n_pi -> n_Q[style=dashed]
+   n_pi_prior -> n_pi
+   n_er -> n_Q[style=dashed]
+   n_er_prior -> n_er
+   n_psi -> n_seq
+   n_topology -> n_psi[style=dashed]
+   n_br_lens -> n_TL[style=dashed]
+   n_br_lens -> n_psi[style=dashed]
+   n_br_lens_1 -> n_br_lens[style=dashed]
+   n_0x20aa860 -> n_br_lens_1
+   n_br_lens_2 -> n_br_lens[style=dashed]
+   n_0x20ac3e0 -> n_br_lens_2
+   n_br_lens_3 -> n_br_lens[style=dashed]
+   n_0x20a97e0 -> n_br_lens_3
+   n_br_lens_4 -> n_br_lens[style=dashed]
+   n_0x20ac280 -> n_br_lens_4
+   n_br_lens_5 -> n_br_lens[style=dashed]
+   n_0x20abba0 -> n_br_lens_5
+   n_br_lens_6 -> n_br_lens[style=dashed]
+   n_0x20ab200 -> n_br_lens_6
+   n_br_lens_7 -> n_br_lens[style=dashed]
+   n_0x20a93c0 -> n_br_lens_7
+   n_br_lens_8 -> n_br_lens[style=dashed]
+   n_0x20a9100 -> n_br_lens_8
+   n_br_lens_9 -> n_br_lens[style=dashed]
+   n_0x20ab780 -> n_br_lens_9
+   n_br_lens_10 -> n_br_lens[style=dashed]
+   n_0x20abd00 -> n_br_lens_10
+   n_br_lens_11 -> n_br_lens[style=dashed]
+   n_0x20a8e40 -> n_br_lens_11
+   n_br_lens_12 -> n_br_lens[style=dashed]
+   n_0x20aaf40 -> n_br_lens_12
+   n_br_lens_13 -> n_br_lens[style=dashed]
+   n_0x20ad720 -> n_br_lens_13
+   n_br_lens_14 -> n_br_lens[style=dashed]
+   n_0x20a9940 -> n_br_lens_14
+   n_br_lens_15 -> n_br_lens[style=dashed]
+   n_0x20aac80 -> n_br_lens_15
+   n_br_lens_16 -> n_br_lens[style=dashed]
+   n_0x20aa9c0 -> n_br_lens_16
+   n_br_lens_17 -> n_br_lens[style=dashed]
+   n_0x20aa2e0 -> n_br_lens_17
+   n_br_lens_18 -> n_br_lens[style=dashed]
+   n_0x20abe60 -> n_br_lens_18
+   n_br_lens_19 -> n_br_lens[style=dashed]
+   n_0x20ab360 -> n_br_lens_19
+   n_br_lens_20 -> n_br_lens[style=dashed]
+   n_0x20aa440 -> n_br_lens_20
+   n_br_lens_21 -> n_br_lens[style=dashed]
+   n_0x20aab20 -> n_br_lens_21
+   n_br_lens_22 -> n_br_lens[style=dashed]
+   n_0x20ab4c0 -> n_br_lens_22
+   n_br_lens_23 -> n_br_lens[style=dashed]
+   n_0x20ad040 -> n_br_lens_23
+   n_br_lens_24 -> n_br_lens[style=dashed]
+   n_0x20ab620 -> n_br_lens_24
+   n_br_lens_25 -> n_br_lens[style=dashed]
+   n_0x20abfc0 -> n_br_lens_25
+   n_br_lens_26 -> n_br_lens[style=dashed]
+   n_0x20ac540 -> n_br_lens_26
+   n_br_lens_27 -> n_br_lens[style=dashed]
+   n_0x20acee0 -> n_br_lens_27
+   n_br_lens_28 -> n_br_lens[style=dashed]
+   n_0x20ad300 -> n_br_lens_28
+   n_br_lens_29 -> n_br_lens[style=dashed]
+   n_0x20a8080 -> n_br_lens_29
+   n_br_lens_30 -> n_br_lens[style=dashed]
+   n_0x20a81e0 -> n_br_lens_30
+   n_br_lens_31 -> n_br_lens[style=dashed]
+   n_0x20a84a0 -> n_br_lens_31
+   n_br_lens_32 -> n_br_lens[style=dashed]
+   n_0x20ade00 -> n_br_lens_32
+   n_br_lens_33 -> n_br_lens[style=dashed]
+   n_0x20adca0 -> n_br_lens_33
+   n_br_lens_34 -> n_br_lens[style=dashed]
+   n_0x20ad9e0 -> n_br_lens_34
+   n_br_lens_35 -> n_br_lens[style=dashed]
+   n_0x20ad880 -> n_br_lens_35
+   n_br_lens_36 -> n_br_lens[style=dashed]
+   n_0x20adb40 -> n_br_lens_36
+   n_br_lens_37 -> n_br_lens[style=dashed]
+   n_0x20a2040 -> n_br_lens_37
+   n_br_lens_38 -> n_br_lens[style=dashed]
+   n_0x20a2300 -> n_br_lens_38
+   n_br_lens_39 -> n_br_lens[style=dashed]
+   n_0x20a1540 -> n_br_lens_39
+   n_br_lens_40 -> n_br_lens[style=dashed]
+   n_0x209dfa0 -> n_br_lens_40
+   n_br_lens_41 -> n_br_lens[style=dashed]
+   n_0x20a1d80 -> n_br_lens_41
+   n_br_lens_42 -> n_br_lens[style=dashed]
+   n_0x20a0a40 -> n_br_lens_42
+   n_br_lens_43 -> n_br_lens[style=dashed]
+   n_0x20a21a0 -> n_br_lens_43
+   n_br_lens_44 -> n_br_lens[style=dashed]
+   n_0x209ec00 -> n_br_lens_44
+   n_br_lens_45 -> n_br_lens[style=dashed]
+   n_0x209dce0 -> n_br_lens_45
+   n_br_lens_46 -> n_br_lens[style=dashed]
+   n_0x20a16a0 -> n_br_lens_46
+   n_br_lens_47 -> n_br_lens[style=dashed]
+   n_0x209e7e0 -> n_br_lens_47
+   n_br_lens_48 -> n_br_lens[style=dashed]
+   n_0x20a1120 -> n_br_lens_48
+   n_br_lens_49 -> n_br_lens[style=dashed]
+   n_0x209de40 -> n_br_lens_49
+   n_br_lens_50 -> n_br_lens[style=dashed]
+   n_0x209e520 -> n_br_lens_50
+   n_br_lens_51 -> n_br_lens[style=dashed]
+   n_0x20a2460 -> n_br_lens_51
+   n_br_lens_52 -> n_br_lens[style=dashed]
+   n_0x209ff40 -> n_br_lens_52
+   n_br_lens_53 -> n_br_lens[style=dashed]
+   n_0x20a0e60 -> n_br_lens_53
+   n_br_lens_54 -> n_br_lens[style=dashed]
+   n_0x209d760 -> n_br_lens_54
+   n_br_lens_55 -> n_br_lens[style=dashed]
+   n_0x20a25c0 -> n_br_lens_55
+   n_br_lens_56 -> n_br_lens[style=dashed]
+   n_0x209e680 -> n_br_lens_56
+   n_br_lens_57 -> n_br_lens[style=dashed]
+   n_0x209f020 -> n_br_lens_57
+   n_br_lens_58 -> n_br_lens[style=dashed]
+   n_0x20a1c20 -> n_br_lens_58
+   n_br_lens_59 -> n_br_lens[style=dashed]
+   n_0x209d4a0 -> n_br_lens_59
+   n_br_lens_60 -> n_br_lens[style=dashed]
+   n_0x20a1ee0 -> n_br_lens_60
+   n_br_lens_61 -> n_br_lens[style=dashed]
+   n_0x209f180 -> n_br_lens_61
+   n_br_lens_62 -> n_br_lens[style=dashed]
+   n_0x209d340 -> n_br_lens_62
+   n_br_lens_63 -> n_br_lens[style=dashed]
+   n_0x20a2720 -> n_br_lens_63
+   n_br_lens_64 -> n_br_lens[style=dashed]
+   n_0x20a1280 -> n_br_lens_64
+   n_br_lens_65 -> n_br_lens[style=dashed]
+   n_0x209e940 -> n_br_lens_65
+   n_br_lens_66 -> n_br_lens[style=dashed]
+   n_0x209f2e0 -> n_br_lens_66
+   n_br_lens_67 -> n_br_lens[style=dashed]
+   n_0x209d080 -> n_br_lens_67
+   n_br_lens_68 -> n_br_lens[style=dashed]
+   n_0x209f860 -> n_br_lens_68
+   n_br_lens_69 -> n_br_lens[style=dashed]
+   n_0x209db80 -> n_br_lens_69
+   n_br_lens_70 -> n_br_lens[style=dashed]
+   n_0x20a0ba0 -> n_br_lens_70
+   n_br_lens_71 -> n_br_lens[style=dashed]
+   n_0x209f440 -> n_br_lens_71
+   n_br_lens_72 -> n_br_lens[style=dashed]
+   n_0x20a08e0 -> n_br_lens_72
+   n_br_lens_73 -> n_br_lens[style=dashed]
+   n_0x20a00a0 -> n_br_lens_73
+   n_br_lens_74 -> n_br_lens[style=dashed]
+   n_0x20a1800 -> n_br_lens_74
+   n_br_lens_75 -> n_br_lens[style=dashed]
+   n_0x20a0d00 -> n_br_lens_75
+   n_br_lens_76 -> n_br_lens[style=dashed]
+   n_0x209e100 -> n_br_lens_76
+   n_br_lens_77 -> n_br_lens[style=dashed]
+   n_0x209f9c0 -> n_br_lens_77
+   n_br_lens_78 -> n_br_lens[style=dashed]
+   n_0x209d8c0 -> n_br_lens_78
+   n_br_lens_79 -> n_br_lens[style=dashed]
+   n_0x20a0fc0 -> n_br_lens_79
+   n_br_lens_80 -> n_br_lens[style=dashed]
+   n_0x20a13e0 -> n_br_lens_80
+   n_br_lens_81 -> n_br_lens[style=dashed]
+   n_0x209d1e0 -> n_br_lens_81
+   n_br_lens_82 -> n_br_lens[style=dashed]
+   n_0x209d600 -> n_br_lens_82
+   n_br_lens_83 -> n_br_lens[style=dashed]
+   n_0x20a1960 -> n_br_lens_83
+   n_seq_pInv -> n_seq
+   n_seq_branchRates -> n_seq
+   n_sr -> n_seq
+   n_alpha -> n_sr[style=dashed]
+   n_0x209e260 -> n_alpha
+   n_0x209e3c0 -> n_alpha
+   n_numCats -> n_sr[style=dashed]
+   {rank=same; n_seq;}
+   graph [bgcolor=lavenderblush2, pad=0.25]
+}
