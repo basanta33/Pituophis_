@@ -1,1 +1,4 @@
 q()
+getwd()
+setwd("D:\\\\Projects\\\\Pituophis_\\\\for_tree")
+source("scripts/mcmc_GTR_Gamma_Inv_SNK.Rev")
