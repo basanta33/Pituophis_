@@ -1,0 +1,144 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=42;
+	taxlabels
+	'P.catenifer_Sioux_NE'
+	'P.catenifer_Wheeler_TX'
+	'P.m.l._Jackson_MS_2'
+	'P.m.l._Jackson_MS_3'
+	'P.m.l._Mobile_AL'
+	'P.m.l._Perry_MS_1'
+	'P.m.l._Perry_MS_2'
+	'P.m.l._Perry_MS_3'
+	'P.m.mel._Autauga_AL'
+	'P.m.mel._Baker_GA'
+	'P.m.mel._Burlington_NJ_1'
+	'P.m.mel._Burlington_NJ_2'
+	'P.m.mel._Covington_AL_1'
+	'P.m.mel._Covington_AL_2'
+	'P.m.mel._Hoke_NC'
+	'P.m.mel._Humphreys_TN'
+	'P.m.mel._Huntingdon_TN'
+	'P.m.mel._Marion_GA_1'
+	'P.m.mel._Marion_GA_2'
+	'P.m.mel._Ocean_NJ'
+	'P.m.mel._Pierce_GA'
+	'P.m.mel._Richmond_NC'
+	'P.m.mel._Rockingham_NC'
+	'P.m.mel._Scotland_NC'
+	'P.m.mel._Turner_GA'
+	'P.m.mel._Winston_AL'
+	'P.m.mg._Alachua_FL'
+	'P.m.mg._Bristol_FL'
+	'P.m.mg._Cantonment_FL'
+	'P.m.mg._Hamilton_FL'
+	'P.m.mg._Highlands_FL'
+	'P.m.mg._Lafayette_FL'
+	'P.m.mg._Liberty_FL'
+	'P.m.mg._Marion_FL'
+	'P.m.mg._Okaloosa_FL'
+	'P.m.mg._Okeechobee_FL_1'
+	'P.m.mg._Okeechobee_FL_2'
+	'P.m.mg._PDLe_FL'
+	'P.m.mg._SanRos_FL'
+	'P.m.mg_Hernando_FL'
+	'P.ruthveni_Bienville_LA_1'
+	'P.ruthveni_Bienville_LA_2'
+;
+end;
+
+begin trees;
+	tree _1 = [&R] (((((((((('P.m.mg._Okeechobee_FL_1'[&index=12,age_95%_HPD={1.40275,1.60548},!color=#0033ff]:0.047048,'P.m.mg._Okeechobee_FL_2'[&index=40,age_95%_HPD={1.41219,1.61557},!color=#0033ff]:0.029275)[&index=44,posterior=1.0,age_95%_HPD={1.43997,1.6438}]:0.01383,'P.m.mg._Highlands_FL'[&index=41,age_95%_HPD={1.41254,1.6164},!color=#0033ff]:0.043067)[&index=45,posterior=1.0,age_95%_HPD={1.45912,1.66314}]:0.00998,('P.m.mg._Marion_FL'[&index=36,age_95%_HPD={1.41626,1.6201},!color=#0033ff]:0.039716,'P.m.mg_Hernando_FL'[&index=37,age_95%_HPD={1.41175,1.61515},!color=#0033ff]:0.04788)[&index=46,age_95%_HPD={1.45888,1.66284},posterior=1.0]:0.008594)[&index=47,age_95%_HPD={1.46968,1.67372},posterior=1.0]:0.005849,('P.m.mg._Alachua_FL'[&index=6,age_95%_HPD={1.42326,1.62646},!color=#0033ff]:0.049845,'P.m.mg._Lafayette_FL'[&index=9,age_95%_HPD={1.42884,1.63222},!color=#0033ff]:0.037575)[&index=48,posterior=1.0,age_95%_HPD={1.46479,1.66895}]:0.00754)[&index=49,age_95%_HPD={1.47079,1.67462},posterior=1.0]:0.011413,(('P.m.mel._Baker_GA'[&index=19,age_95%_HPD={1.42552,1.62893},!color=#99ff66]:0.045933,'P.m.mel._Turner_GA'[&index=39,age_95%_HPD={1.43363,1.63699},!color=#99ff66]:0.040341)[&index=50,age_95%_HPD={1.4731,1.6772},posterior=1.0]:0.007369,'P.m.mel._Pierce_GA'[&index=14,age_95%_HPD={1.4423,1.64602},!color=#99ff66]:0.040669)[&index=51,age_95%_HPD={1.48981,1.69446},posterior=0.995458]:0.004711)[&index=52,age_95%_HPD={1.48311,1.68742},posterior=1.0]:0.005781,(((('P.m.mel._Burlington_NJ_1'[&index=2,age_95%_HPD={1.40074,1.60453},!color=#99ff66]:0.032302,'P.m.mel._Ocean_NJ'[&index=21,age_95%_HPD={1.41397,1.61764},!color=#99ff66]:0.030751)[&index=53,age_95%_HPD={1.43478,1.6388},posterior=0.999905]:0.009038,'P.m.mel._Burlington_NJ_2'[&index=13,age_95%_HPD={1.41335,1.61701},!color=#99ff66]:0.034876)[&index=54,age_95%_HPD={1.44286,1.64698},posterior=1.0]:0.023826,'P.m.mel._Hoke_NC'[&index=20,age_95%_HPD={1.42423,1.6276},!color=#99ff66]:0.043568)[&index=55,posterior=1.0,age_95%_HPD={1.46842,1.67276}]:0.009489,(('P.m.mel._Richmond_NC'[&index=43,age_95%_HPD={1.42497,1.62796},!color=#99ff66]:0.033617,'P.m.mel._Rockingham_NC'[&index=22,age_95%_HPD={1.41343,1.61665},!color=#99ff66]:0.04637)[&index=56,posterior=1.0,age_95%_HPD={1.45882,1.66248}]:0.00908,'P.m.mel._Scotland_NC'[&index=29,age_95%_HPD={1.42304,1.62651},!color=#99ff66]:0.046423)[&index=57,posterior=1.0,age_95%_HPD={1.46827,1.67224}]:0.008902)[&index=58,posterior=1.0,age_95%_HPD={1.4875,1.69165}]:0.012539)[&index=59,posterior=1.0,age_95%_HPD={1.48889,1.69312}]:0.007175,((((('P.m.l._Jackson_MS_2'[&index=28,age_95%_HPD={1.41946,1.62281},!color=#ff3300]:0.039799,'P.m.l._Mobile_AL'[&index=10,age_95%_HPD={1.42111,1.62502},!color=#ff3300]:0.031916)[&index=60,posterior=1.0,age_95%_HPD={1.45748,1.66175}]:0.007802,'P.m.l._Perry_MS_2'[&index=23,age_95%_HPD={1.42592,1.63006},!color=#ff3300]:0.038822)[&index=61,posterior=1.0,age_95%_HPD={1.46586,1.67021}]:0.007303,(('P.m.l._Perry_MS_1'[&index=27,age_95%_HPD={1.42133,1.62461},!color=#ff3300]:0.031674,'P.m.l._Perry_MS_3'[&index=34,age_95%_HPD={1.41472,1.61803},!color=#ff3300]:0.034751)[&index=62,posterior=1.0,age_95%_HPD={1.45116,1.65503}]:0.012106,'P.m.l._Jackson_MS_3'[&index=30,age_95%_HPD={1.42594,1.62912},!color=#ff3300]:0.035698)[&index=63,posterior=1.0,age_95%_HPD={1.46432,1.66826}]:0.008249)[&index=64,posterior=1.0,age_95%_HPD={1.4733,1.67732}]:0.017635,((('P.m.mel._Covington_AL_1'[&index=26,age_95%_HPD={1.41901,1.62277},!color=#99ff66]:0.044186,'P.m.mg._Cantonment_FL'[&index=16,age_95%_HPD={1.4167,1.61991},!color=#0033ff]:0.054703)[&index=65,posterior=1.0,age_95%_HPD={1.4696,1.67344}]:0.007333,('P.m.mel._Covington_AL_2'[&index=17,age_95%_HPD={1.43756,1.64083},!color=#99ff66]:0.031187,'P.m.mg._SanRos_FL'[&index=38,age_95%_HPD={1.4248,1.6286},!color=#0033ff]:0.042463)[&index=66,posterior=1.0,age_95%_HPD={1.46374,1.66788}]:0.008294)[&index=67,posterior=1.0,age_95%_HPD={1.47746,1.68156}]:0.007407,('P.m.mg._Okaloosa_FL'[&index=25,age_95%_HPD={1.42186,1.62351},!color=#0033ff]:0.050934,'P.m.mg._PDLe_FL'[&index=24,age_95%_HPD={1.43353,1.63615},!color=#0033ff]:0.038704)[&index=68,posterior=1.0,age_95%_HPD={1.47158,1.67421}]:0.009684)[&index=69,posterior=0.571969,age_95%_HPD={1.48858,1.68888}]:0.005573)[&index=70,age_95%_HPD={1.48303,1.68689},posterior=1.0]:0.007254,((('P.m.mg._Hamilton_FL'[&index=8,age_95%_HPD={1.43821,1.64209},!color=#0033ff]:0.037382,'P.m.mg._Liberty_FL'[&index=15,age_95%_HPD={1.42906,1.63239},!color=#0033ff]:0.044231)[&index=71,posterior=1.0,age_95%_HPD={1.46858,1.67267}]:0.00755,'P.m.mg._Bristol_FL'[&index=42,age_95%_HPD={1.43033,1.63424},!color=#0033ff]:0.042282)[&index=72,posterior=1.0,age_95%_HPD={1.47538,1.67945}]:0.008014,('P.m.mel._Marion_GA_1'[&index=33,age_95%_HPD={1.44017,1.64416},!color=#99ff66]:0.038643,'P.m.mel._Marion_GA_2'[&index=7,age_95%_HPD={1.44036,1.64383},!color=#99ff66]:0.042339)[&index=73,age_95%_HPD={1.47859,1.68294},posterior=1.0]:0.010077)[&index=74,posterior=1.0,age_95%_HPD={1.48323,1.68737}]:0.006718)[&index=75,posterior=0.973408,age_95%_HPD={1.49054,1.69414}]:0.005874)[&index=76,posterior=1.0,age_95%_HPD={1.49454,1.69877}]:0.009843,(('P.m.mel._Autauga_AL'[&index=31,age_95%_HPD={1.45395,1.65782},!color=#99ff66]:0.043938,'P.m.mel._Winston_AL'[&index=11,age_95%_HPD={1.46479,1.66843},!color=#99ff66]:0.035235)[&index=77,posterior=1.0,age_95%_HPD={1.49871,1.70268}]:0.009851,('P.m.mel._Humphreys_TN'[&index=18,age_95%_HPD={1.42422,1.62818},!color=#99ff66]:0.064564,'P.m.mel._Huntingdon_TN'[&index=5,age_95%_HPD={1.44946,1.65377},!color=#99ff66]:0.036129)[&index=78,posterior=1.0,age_95%_HPD={1.49818,1.70242}]:0.011992)[&index=79,posterior=0.99877,age_95%_HPD={1.50927,1.71358}]:0.006831)[&index=80,posterior=1.0,age_95%_HPD={1.50763,1.71164}]:0.035741,('P.ruthveni_Bienville_LA_1'[&index=32,age_95%_HPD={1.49354,1.69795}]:0.007474,'P.ruthveni_Bienville_LA_2'[&index=4,age_95%_HPD={1.49967,1.70419}]:0.005082)[&index=81,age_95%_HPD={1.50187,1.70635},posterior=1.0]:0.04173)[&index=82,age_95%_HPD={1.55071,1.75545},posterior=1.0]:0.150218,('P.catenifer_Sioux_NE'[&index=35,age_95%_HPD={1.58214,1.78934}]:0.063429,'P.catenifer_Wheeler_TX'[&index=3,age_95%_HPD={1.60135,1.80917}]:0.045169)[&index=83,posterior=1.0,age_95%_HPD={1.64399,1.85261}]:0.050341);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=2.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="index";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute="age_95%_HPD";
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="posterior";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=12;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=0;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="Arial Black";
+	set tipLabels.fontSize=16;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=false;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
