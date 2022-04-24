@@ -26,7 +26,7 @@ speciestree = 1
 # and a starting (fixed for A00 and A10) species tree
 species&tree = 4  ME FE MA OG
                   7  24 7  5
-                  ((ME,FL,MA)OG)
+                  (((ME,FE),MA),OG);
 
 
 usedata = 1      #  0: do no use data (prior); 1: use sequence data
@@ -59,9 +59,4 @@ print = 1 0 0 0    # MCMC samples, locusrate, heredity scalars, Gene trees
 # First burnin samples are discarded, then we log every sampfreq-th sample
 burnin = 2000       # discard first 2000 steps
 sampfreq = 10        # log sample every 10TH step (after burnin)
-nsample = 100000    # number of samples to log in mcmcfile
-
-# threads
-# threads = 2          # threads = threads
-threads = 2 1 1        # threads = threads starting_core step
-BayesFactorBeta = 0.000244140625
+nsample = 100000    # number of samples to log in mcmcfileBayesFactorBeta = 0.000244140625
