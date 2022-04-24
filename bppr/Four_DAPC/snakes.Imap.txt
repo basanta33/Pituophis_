@@ -5,7 +5,6 @@ P.m.l._Perry_MS_1   ME
 P.m.l._Perry_MS_2   ME
 P.m.l._Perry_MS_3   ME
 P.m.mg._Cantonment_FL   ME
-
 P.m.mel._Autauga_AL FE
 P.m.mel._Baker_GA   FE
 P.m.mel._Covington_AL_1 FE
@@ -27,10 +26,9 @@ P.m.mg._Marion_FL	FE
 P.m.mg._Okaloosa_FL FE
 P.m.mg._Okeechobee_FL_1	FE
 P.m.mg._Okeechobee_FL_2	FE
-P.m.mg._PDLe_FL ME
+P.m.mg._PDLe_FL FE
 P.m.mg._SanRos_FL   FE
 P.m.mg_Hernando_FL	FE
-
 P.m.mel._Richmond_NC	MA
 P.m.mel._Rockingham_NC	MA
 P.m.mel._Scotland_NC	MA
@@ -38,8 +36,7 @@ P.m.mel._Ocean_NJ	MA
 P.m.mel._Burlington_NJ_1	MA
 P.m.mel._Burlington_NJ_2	MA
 P.m.mel._Hoke_NC	MA
-
-P.catenifer_Sioux_NE	OG
+P.catenifer_Sioux_NE   OG
 P.catenifer_Wheeler_TX	OG
 P.ruthveni_Bienville_LA_1	OG
 P.ruthveni_Bienville_LA_2	OG
