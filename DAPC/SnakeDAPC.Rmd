@@ -1,0 +1,49 @@
+---
+title: "Snake_DPCA"
+author: "April Wright"
+date: "2/17/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### activate adegenet
+
+```{r}
+library("adegenet")
+
+```
+
+### import fasta file in R
+```{r}
+getwd()
+dapc<-fasta2DNAbin("snk.fa")
+```
+
+### covert to genID object
+
+```{r}
+obj <- DNAbin2genind(dapc, polyThres=0.1)
+```
+
+First, we define a maximum possible number of clusters for the DAPC. We set this high so that later, we can pare down. If it's low, we can't add categories back in later.
+
+```{r}
+
+### find number of clusters for DAPC
+grp<-find.clusters(obj,max.n.clust=80)
+```
+
+Next, we run the actual PCA
+```{r}
+### run DAPC - change 'n.pca' to refelect PC number selected above)
+dapc1 <- dapc(obj, grp$grp)
+```
+
+Visualize the results. I chose this visualization because it was active but not too busy
+
+```{r}
+scatter(dapc1, scree.da=FALSE, bg="white", pch=20, cell=0, cstar=0, col=myCol, , solid=.4, cex=3,clab=0, leg=TRUE)
+```
