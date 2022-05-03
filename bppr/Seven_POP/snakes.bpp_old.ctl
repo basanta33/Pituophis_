@@ -7,12 +7,12 @@
        outfile = out.txt
       mcmcfile = mcmc.txt
 
-  speciesdelimitation = 0     * fixed species tree
+  speciesdelimitation = 1 1 2 0.5     * algorithm 1 finetune
 
 speciesmodelprior = 1         * 0: uniform labeled histories; 1:uniform rooted trees; 2:user probs
 
   species&tree = 7 FE MA ME SE FL TE OG
-                   10 7 7 5 5 4 5 
+                   10 7 7 5 5 4 5
                   ((((FE, MA), ((ME, SE), FL)), TE), OG);
 
        usedata = 1    * 0: no data (prior); 1:seq like

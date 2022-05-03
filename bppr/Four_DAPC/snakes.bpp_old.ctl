@@ -11,9 +11,9 @@
 
 speciesmodelprior = 1         * 0: uniform labeled histories; 1:uniform rooted trees; 2:user probs
 
-  species&tree = 3 FE ME OG
-                   18 10 5
-                  ((ME,FE),OG);
+  species&tree = 4  ME FE MA OG
+                    7  24 7  5
+                    ((ME,FE),(MA,OG));
 
        usedata = 1    * 0: no data (prior); 1:seq like
          nloci = 1   * number of data sets in seqfile

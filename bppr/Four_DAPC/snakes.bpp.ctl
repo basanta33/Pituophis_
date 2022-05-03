@@ -26,7 +26,7 @@ speciestree = 1
 # and a starting (fixed for A00 and A10) species tree
 species&tree = 4  ME FE MA OG
                   7  24 7  5
-                  (((ME,FE),MA),OG);
+                  ((ME,FE),(MA,OG));
 
 
 usedata = 1      #  0: do no use data (prior); 1: use sequence data
