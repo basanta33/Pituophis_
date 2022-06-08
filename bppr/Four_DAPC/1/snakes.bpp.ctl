@@ -1,63 +1,35 @@
-# Seed for the random number generator (-1 selects a random seed)
-seed =  -1
+* This is a BPP 4.0 control file !!!
 
-# input and output files
-seqfile  = ../P_mel_SNPs_phased_w_outgroup.min4.phy           # sequence file (per-locus alignments)
-Imapfile = ../snakes.Imap.txt    # assignments of samples to species
-outfile  = out.txt                 # output log file
-mcmcfile = mcmc.txt                # file to log mcmc samples
+          seed = -1
 
-# Selection of analysis type by setting options "speciesdelimitation" and "speciestree"
-# A00 - estimation of parameters on fixed phylogeny
-# A10 - species delimitation using a guide tree
-# A01 - species tree inference
-# A11 - joint species tree inference and species delimitation
+       seqfile = ../P_mel_SNPs_phased_w_outgroup.min4.phy
+      Imapfile = ../snakes.Imap.txt
+       outfile = out.txt
+      mcmcfile = mcmc.txt
 
-# enable species delimitation (two available algorithms):
-# speciesdelimitation = 0          # species delimitation disabled (default)
-# speciesdelimitation = 1 0 2      # species delimitation algorithm 0 finetune (e)
-speciesdelimitation = 1 1 2 0.5    # species delimitation algorithm 1 finetune (a m)
+  speciesdelimitation = 0     * fixed species tree
 
-# enable species tree inference
-speciestree = 1
+speciesmodelprior = 1         * 0: uniform labeled histories; 1:uniform rooted trees; 2:user probs
 
-# specification of: # of species, whitespace-separated list of species
-# followed by max number of sequences for each species at a locus,
-# and a starting (fixed for A00 and A10) species tree
-species&tree = 4  ME FE MA OG
-                  7  24 7  5
-                  ((ME,FE),(MA,OG));
+  species&tree = 4  ME FE MA OG
+                    7  24 7  5
+                    ((ME,FE),(MA,OG));
 
+       usedata = 1    * 0: no data (prior); 1:seq like
+         nloci = 1   * number of data sets in seqfile
 
-usedata = 1      #  0: do no use data (prior); 1: use sequence data
-nloci = 1        # number of data sets (alignments) in seqfile
+     cleandata = 0      * remove sites with ambiguity data (1:yes, 0:no)?
 
-cleandata = 0    # remove sites with ambiguity data (1:yes, 0:no)?
+    thetaprior = 3 0.008   * 2 500    # invgamma(a, b) for theta
+      tauprior = 3 0.036   * 4 219 1  # invgamma(a, b) for root tau & Dirichlet(a) for other tau's
 
-# species model prior (four potential priors: 0,1,2,3)
-# Method A01 (species tree inference) uses speciesmodelprior = 1
-# Method A10 (species delimitation with a fixed guide tree) uses either speciesmodelprior=0,1
-# Method A11 (joint species delimitation and species tree inference) uses either speciesmodelprior=0,1,2,3
-speciesmodelprior = 0         * 0: uniform labeled histories; 1:uniform rooted trees
+      locusrate = 0       # (0: No variation, 1: estimate, 2: from file) & a_Dirichlet (if 1)
+       heredity = 0       # (0: No variation, 1: estimate, 2: from file) & a_gamma b_gamma (if 1)
 
-# theta and gamma priors
-thetaprior = 3 0.008        # Inverse-Gamma(a, b) for theta
-tauprior   = 3 0.036         # Inverse-Gamma(a, b) for root tau
-#thetaprior = gamma 2 1000     # Gamma(a,b) for theta
-#tauprior   = gamma 2 1000     # Gamma(a,b) for root tau
+      finetune = 1: .012 .003 .0001 .00005 .004 .01 .01  # auto (0 or 1): finetune for GBtj, GBspr, theta, tau, mix, locusrate, seqerr
 
-# auto-tune step-length parameters during burnin (1: yes, 0: no)
-# Potentially, followed by a colon and starting values (otherwise defaults are used)
-#finetune = 1
-finetune = 1: .012 .003 .0001 .00005 .004 .01 .01 # GBtj, GBspr, theta, tau, mix, locusrate, ...
-
-# binary flags on what to log
-print = 1 0 0 0    # MCMC samples, locusrate, heredity scalars, Gene trees
-
-# MCMC chain information
-# Total chain length is: burnin + sampfreq*nsample
-# First burnin samples are discarded, then we log every sampfreq-th sample
-burnin = 2000       # discard first 2000 steps
-sampfreq = 10        # log sample every 10TH step (after burnin)
-nsample = 100000    # number of samples to log in mcmcfile
+         print = 1 0 0 0   * MCMC samples, locusrate, heredityscalars Genetrees
+        burnin = 2000
+      sampfreq = 10
+       nsample = 100000
 BayesFactorBeta = 1e-300
