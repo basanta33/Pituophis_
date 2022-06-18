@@ -1,0 +1,7 @@
+#NEXUS
+BEGIN TREES;
+	UTREE 1 = ((ME: 0.023176, FE: 0.023176)MEFE[&height_95%_HPD={0.02101200, 0.02550500}]: 0.013503, (MA: 0.000097, OG: 0.000097)MAOG[&height_95%_HPD={0.00000000, 0.00024500}]: 0.036583)MEFEMAOG[&height_95%_HPD={0.03142800, 0.04240500}];
+END;
+
+[Species tree with tau as branch lengths and theta as labels, for FigTree.
+In FigTree, choose 95%HPD for Node Bars and label for Node Labels]
