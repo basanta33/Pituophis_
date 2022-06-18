@@ -5,7 +5,6 @@ Pml_PerryMS1           0 0 1 0  ME
 Pml_PerryMS2           0 0 1 0  ME
 Pml_PerryMS3           0 0 1 0  ME
 Pmmg_CantonmentFL      0 0 1 0  ME
-
 Pmmel_AutaugaAL        0 1 0 0  FE
 Pmmel_BakerGA          0 1 0 0  FE
 Pmmel_CovingtonAL1     0 1 0 0  FE
@@ -30,7 +29,6 @@ Pmmg_OkeechobeeFL2     0 1 0 0  FE
 Pmmg_PDLeFL            0 1 0 0  FE
 Pmmg_SanRosFL          0 1 0 0  FE
 Pmmg_HernandoFL        0 1 0 0  FE
-
 Pmmel_RichmondNC       1 0 0 0  MA 
 Pmmel_RockinghamNC     1 0 0 0  MA
 Pmmel_ScotlandNC       1 0 0 0  MA
