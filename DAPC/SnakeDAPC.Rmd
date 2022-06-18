@@ -33,7 +33,7 @@ First, we define a maximum possible number of clusters for the DAPC. We set this
 ```{r}
 
 ### find number of clusters for DAPC
-grp<-find.clusters(obj,max.n.clust=80)
+grp<-find.clusters(obj,max.n.clust=40)
 ```
 
 Next, we run the actual PCA
