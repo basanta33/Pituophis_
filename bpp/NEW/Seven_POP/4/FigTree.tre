@@ -1,7 +1,0 @@
-#NEXUS
-BEGIN TREES;
-	UTREE 1 = ((((FE: 0.034461, MA: 0.034461)FEMA[&height_95%_HPD={0.02712600, 0.04179700}]: 0.008500, ((ME: 0.029717, SE: 0.029717)MESE[&height_95%_HPD={0.02263100, 0.03699600}]: 0.008258, FL: 0.037975)MESEFL[&height_95%_HPD={0.03213300, 0.04382900}]: 0.004986)FEMAMESEFL[&height_95%_HPD={0.03801900, 0.04798800}]: 0.003449, TE: 0.046410)FEMAMESEFLTE[&height_95%_HPD={0.04102900, 0.05192100}]: 0.005465, OG: 0.051875)FEMAMESEFLTEOG[&height_95%_HPD={0.04399700, 0.06028100}];
-END;
-
-[Species tree with tau as branch lengths and theta as labels, for FigTree.
-In FigTree, choose 95%HPD for Node Bars and label for Node Labels]

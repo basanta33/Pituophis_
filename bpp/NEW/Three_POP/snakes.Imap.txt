@@ -13,8 +13,8 @@ P.m.mel._Burlington_NJ_2	FE
 P.m.mel._Covington_AL_1	ME
 P.m.mel._Covington_AL_2	ME
 P.m.mel._Hoke_NC	FE
-P.m.mel._Humphreys_TN	ME
-P.m.mel._Huntingdon_TN	ME
+P.m.mel._Humphreys_TN	TN
+P.m.mel._Huntingdon_TN	TN
 P.m.mel._Marion_GA_1	ME
 P.m.mel._Marion_GA_2	ME
 P.m.mel._Ocean_NJ	FE
