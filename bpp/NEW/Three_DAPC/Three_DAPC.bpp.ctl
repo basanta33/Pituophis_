@@ -1,9 +1,9 @@
 seed =  -1
 
-seqfile = P_mel_SNPs_phased_w_outgroup.min4.phy
+seqfile = P_mel_complete.phylip
 Imapfile = snakes.Imap.txt
-outfile = out_GTR.txt
-mcmcfile = mcmc_GTR.txt
+outfile = out_GTR_complete.txt
+mcmcfile = mcmc_GTR_complete.txt
 
 speciesdelimitation = 0 * fixed species tree
 * speciesdelimitation = 1 0 2   * species delimitation rjMCMC algorithm0 and finetune(e)

@@ -1,0 +1,5 @@
+Analysis started at: Wed Jul 27 13:42:27 2022
+Using BPP version: 4.6.0
+Command: C:\Users\basan\Softwares\bpp-4.6.0-win-x86_64\bpp-4.6.0-win-x86_64\bpp.exe --cfile Three_DAPC.bpp.ctl 
+
+Seed: 1558373993 (randomly generated)

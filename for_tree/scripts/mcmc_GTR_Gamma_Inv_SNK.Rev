@@ -1,5 +1,5 @@
 ###Read sequence data
-data <- readDiscreteCharacterData("Data/snk.nex")
+data <- readDiscreteCharacterData("Data/P_mel_complete.nexus")
 
 ###Get useful variables for the data
 num_taxa <- data.ntaxa()
@@ -85,19 +85,19 @@ seq.clamp(data)
 ############
 
 mymodel = model(Q)
-mymodel.graph("mymodel.dot")
+mymodel.graph("mymodel_complete.dot")
 
 #add monitors
-monitors.append( mnModel(filename="output/P_mel2.log", printgen=10) )
-monitors.append( mnFile(filename="output/P_mel2.trees", printgen=10, psi) )
+monitors.append( mnModel(filename="output/P_mel_complete.log", printgen=10) )
+monitors.append( mnFile(filename="output/P_mel_complete.trees", printgen=10, psi) )
 monitors.append( mnScreen(printgen=100, TL) )
-monitors.append( mnStochasticVariable(filename="output/mcmc-stoch.log", printgen=10))
+monitors.append( mnStochasticVariable(filename="output/mcmc-stoch-complete.log", printgen=10))
 
 ###run the analysis
 mymcmc = mcmc(mymodel, monitors, moves)
 #trace = readStochasticVariableTrace(file="mcmc-stoch.log")
 #mymcmc.initializeFromTrace(trace)
-mymcmc.run(generations=500000)
+mymcmc.run(generations=100000)
 
 ###Summarize the output
 #trace = readTreeTrace("output/P_mel_SNPs_phased_w_outgroup.trees")
