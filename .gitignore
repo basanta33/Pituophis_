@@ -4,5 +4,8 @@
 .Ruserdata
 *.nexus
 *.phylip
-# ignore papers and figures
-./papers/
+Figures/*
+*.jpg
+*.png
+*.pdf
+*.zip
