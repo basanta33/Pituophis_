@@ -1,0 +1,6 @@
+burnin = 10000
+cleandata = 1
+diploid = 1
+locusrate = 0
+nsample = 100000
+outfile = snakes
