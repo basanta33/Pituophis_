@@ -1,0 +1,11 @@
+Folder  Species_Tree  Post_Prob
+1 ((FE ME, MA), OG) 0.885 
+2 ((FE MA, ME), OG) 0.552
+3 (((FE, ME), MA), OG)  0.882
+4 ((FE ME, MA), OG) 0.564
+5 ((FE MA, ME), OG) 0.937
+6 ((FE MA, ME), OG) 0.6835
+7 ((FE MA, ME), OG) 0.895
+8 (((FE, ME), MA), OG)  0.416
+9 ((FE MA, ME), OG) 0.449
+10  ((FE MA, ME), OG) 0.8459
