@@ -1,0 +1,58 @@
+2021-10-23 15:07:49,988 - phyluce_align_get_align_summary_data - INFO - ========= Starting phyluce_align_get_align_summary_data =========
+2021-10-23 15:07:49,989 - phyluce_align_get_align_summary_data - INFO - Version: 1.7.1
+2021-10-23 15:07:49,989 - phyluce_align_get_align_summary_data - INFO - Commit: None
+2021-10-23 15:07:49,989 - phyluce_align_get_align_summary_data - INFO - Argument --alignments: /Users/basanta/projects/Pituophis_/Pituophis_UCE_data/mafft-nexus-edge-trim-45-clean
+2021-10-23 15:07:49,989 - phyluce_align_get_align_summary_data - INFO - Argument --cores: 4
+2021-10-23 15:07:49,989 - phyluce_align_get_align_summary_data - INFO - Argument --input_format: nexus
+2021-10-23 15:07:49,989 - phyluce_align_get_align_summary_data - INFO - Argument --log_path: None
+2021-10-23 15:07:49,989 - phyluce_align_get_align_summary_data - INFO - Argument --output: None
+2021-10-23 15:07:49,989 - phyluce_align_get_align_summary_data - INFO - Argument --show_taxon_counts: False
+2021-10-23 15:07:49,990 - phyluce_align_get_align_summary_data - INFO - Argument --verbosity: INFO
+2021-10-23 15:07:49,990 - phyluce_align_get_align_summary_data - INFO - Getting alignment files
+2021-10-23 15:07:50,015 - phyluce_align_get_align_summary_data - INFO - Computing summary statistics using 4 cores
+2021-10-23 15:07:50,961 - phyluce_align_get_align_summary_data - INFO - ----------------------- Alignment summary -----------------------
+2021-10-23 15:07:50,962 - phyluce_align_get_align_summary_data - INFO - [Alignments] loci:	1
+2021-10-23 15:07:50,962 - phyluce_align_get_align_summary_data - INFO - [Alignments] length:	616
+2021-10-23 15:07:50,962 - phyluce_align_get_align_summary_data - INFO - [Alignments] mean:	616.00
+2021-10-23 15:07:50,962 - phyluce_align_get_align_summary_data - INFO - [Alignments] 95% CI:	nan
+2021-10-23 15:07:50,962 - phyluce_align_get_align_summary_data - INFO - [Alignments] min:	616
+2021-10-23 15:07:50,963 - phyluce_align_get_align_summary_data - INFO - [Alignments] max:	616
+2021-10-23 15:07:50,963 - phyluce_align_get_align_summary_data - INFO - ------------------- Informative Sites summary -------------------
+2021-10-23 15:07:50,963 - phyluce_align_get_align_summary_data - INFO - [Sites] loci:	1
+2021-10-23 15:07:50,963 - phyluce_align_get_align_summary_data - INFO - [Sites] total:	1
+2021-10-23 15:07:50,963 - phyluce_align_get_align_summary_data - INFO - [Sites] mean:	1.00
+2021-10-23 15:07:50,964 - phyluce_align_get_align_summary_data - INFO - [Sites] 95% CI:	nan
+2021-10-23 15:07:50,964 - phyluce_align_get_align_summary_data - INFO - [Sites] min:	1
+2021-10-23 15:07:50,964 - phyluce_align_get_align_summary_data - INFO - [Sites] max:	1
+2021-10-23 15:07:50,965 - phyluce_align_get_align_summary_data - INFO - ------------------------- Taxon summary -------------------------
+2021-10-23 15:07:50,965 - phyluce_align_get_align_summary_data - INFO - [Taxa] mean:		43.00
+2021-10-23 15:07:50,966 - phyluce_align_get_align_summary_data - INFO - [Taxa] 95% CI:	nan
+2021-10-23 15:07:50,966 - phyluce_align_get_align_summary_data - INFO - [Taxa] min:		43
+2021-10-23 15:07:50,966 - phyluce_align_get_align_summary_data - INFO - [Taxa] max:		43
+2021-10-23 15:07:50,966 - phyluce_align_get_align_summary_data - INFO - ----------------- Missing data from trim summary ----------------
+2021-10-23 15:07:50,966 - phyluce_align_get_align_summary_data - INFO - [Missing] mean:	9.17
+2021-10-23 15:07:50,966 - phyluce_align_get_align_summary_data - INFO - [Missing] 95% CI:	nan
+2021-10-23 15:07:50,966 - phyluce_align_get_align_summary_data - INFO - [Missing] min:	9.17
+2021-10-23 15:07:50,966 - phyluce_align_get_align_summary_data - INFO - [Missing] max:	9.17
+2021-10-23 15:07:50,967 - phyluce_align_get_align_summary_data - INFO - -------------------- Character count summary --------------------
+2021-10-23 15:07:50,967 - phyluce_align_get_align_summary_data - INFO - [All characters]	26,488
+2021-10-23 15:07:50,967 - phyluce_align_get_align_summary_data - INFO - [Nucleotides]		23,732
+2021-10-23 15:07:50,967 - phyluce_align_get_align_summary_data - INFO - ---------------- Data matrix completeness summary ---------------
+2021-10-23 15:07:50,967 - phyluce_align_get_align_summary_data - INFO - [Matrix 50%]		1 alignments
+2021-10-23 15:07:50,967 - phyluce_align_get_align_summary_data - INFO - [Matrix 55%]		1 alignments
+2021-10-23 15:07:50,967 - phyluce_align_get_align_summary_data - INFO - [Matrix 60%]		1 alignments
+2021-10-23 15:07:50,967 - phyluce_align_get_align_summary_data - INFO - [Matrix 65%]		1 alignments
+2021-10-23 15:07:50,967 - phyluce_align_get_align_summary_data - INFO - [Matrix 70%]		1 alignments
+2021-10-23 15:07:50,968 - phyluce_align_get_align_summary_data - INFO - [Matrix 75%]		1 alignments
+2021-10-23 15:07:50,968 - phyluce_align_get_align_summary_data - INFO - [Matrix 80%]		1 alignments
+2021-10-23 15:07:50,968 - phyluce_align_get_align_summary_data - INFO - [Matrix 85%]		1 alignments
+2021-10-23 15:07:50,968 - phyluce_align_get_align_summary_data - INFO - [Matrix 90%]		1 alignments
+2021-10-23 15:07:50,968 - phyluce_align_get_align_summary_data - INFO - [Matrix 95%]		1 alignments
+2021-10-23 15:07:50,968 - phyluce_align_get_align_summary_data - INFO - ------------------------ Character counts -----------------------
+2021-10-23 15:07:50,968 - phyluce_align_get_align_summary_data - INFO - [Characters] '-' is present 326 times
+2021-10-23 15:07:50,968 - phyluce_align_get_align_summary_data - INFO - [Characters] '?' is present 2,430 times
+2021-10-23 15:07:50,968 - phyluce_align_get_align_summary_data - INFO - [Characters] 'A' is present 7,820 times
+2021-10-23 15:07:50,968 - phyluce_align_get_align_summary_data - INFO - [Characters] 'C' is present 3,438 times
+2021-10-23 15:07:50,968 - phyluce_align_get_align_summary_data - INFO - [Characters] 'G' is present 4,517 times
+2021-10-23 15:07:50,969 - phyluce_align_get_align_summary_data - INFO - [Characters] 'T' is present 7,957 times
+2021-10-23 15:07:50,969 - phyluce_align_get_align_summary_data - INFO - ========= Completed phyluce_align_get_align_summary_data ========
