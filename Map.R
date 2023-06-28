@@ -11,6 +11,7 @@ subspecies_map <- leaflet(occurences) %>%
   addTiles() %>%
   addCircleMarkers(~decimalLongitude, ~decimalLatitude, color = ~color, stroke = FALSE, fillOpacity = 1)
 
+
 colors <- c("orange", "#3A5795", "#660099", "BADA55")
 leafImg <- system.file(sprintf("legend.png"), package = "leaflegend")
 dapc_map <- leaflet(occurences) %>% 

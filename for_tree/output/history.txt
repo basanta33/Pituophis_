@@ -1,3 +1,0 @@
-trace = readTreeTrace("P_mel2.trees")
-mccTree(trace, "P_mel2.mcc.tre")
-q()
