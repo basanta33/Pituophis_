@@ -3,9 +3,8 @@ dapc<-fasta2DNAbin("snk.fa")
 obj <- DNAbin2genind(dapc, polyThres=0.1)
 ### find number of clusters for DAPC
 grp<-find.clusters(obj,max.n.clust=40)
-dapc1 <- dapc(obj, grp$grp)
-myCol = c("red", "yellow", "blue", "green", "purple", "black", "orange", "darkgreen")
-scatter(dapc1, scree.da=FALSE, bg="white", pch=20, cell=0, cstar=0, col=myCol,solid=.4, cex=3,clab=0, leg=TRUE)
+myCol = c("red", "yellow", "blue", "green", "purple", "black", "orange", "darkgreen", "pink")
+scatter(dapc1, scree.da=FALSE, bg="white", pch=20, cell=0, cstar=0, col=myCol,solid=.5, cex=3,clab=0, leg=TRUE)
 
 
 #plot beautification
@@ -17,21 +16,21 @@ par(mar = c(4.1, 4.9, 4.1, 1.9)) #adjust margins of the plot
 
 scatter(
   dapc1,
-  scree.da = TRUE,
+  scree.da = FALSE,
   posi.da = "topleft",
   ratio.da = .25,
   bg = "white",
   pch = 20,
   cstar = 0,
   col = myCol,
-  scree.pca = TRUE,
+  scree.pca = FALSE,
   solid = .5,
   cex = 3,
   clab = 0,
   leg = TRUE,
   posi.leg = "bottomright",
   txt.leg = paste(c(
-    "A", "B", "C", "D", "E", "F", "G", "H"))) 
+    "A", "B", "C", "D", "E", "F", "G", "H", "I"))) 
 
 myInset <- function() {
   temp <- dapc1$pca.eig
@@ -64,3 +63,5 @@ add.scatter(
 #admixture plot
 compoplot(dapc1) #Creates an admixture plot for the dapc data
 
+par(mar = c(4.1, 20, 4.1, 1.9))
+assignplot(dapc1)
