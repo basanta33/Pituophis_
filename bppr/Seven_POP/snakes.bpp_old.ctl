@@ -2,10 +2,10 @@
 
           seed = -1
 
-       seqfile = ../P_mel_SNPs_phased_w_outgroup.min4.phy
-      Imapfile = ../snakes.Imap.txt
-       outfile = out.txt
-      mcmcfile = mcmc.txt
+       seqfile = P_mel_SNPs_phased_w_outgroup.min4.phy
+      Imapfile = snakes.Imap.txt
+       outfile = outtry.txt
+      mcmcfile = mcmctry.txt
 
   speciesdelimitation = 1 1 2 0.5     * algorithm 1 finetune
 
